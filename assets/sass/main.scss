@@ -118,3 +118,19 @@ footer {
     @include soloPadding(20px);
   }
 }
+
+// MISC
+button.btn {
+  padding: 10px;
+  border: 0px;
+  color: $darkestGray;
+  background: $accent;
+  &:hover {
+    background: #c4c4c4;
+    background-image: -webkit-linear-gradient(top, #c4c4c4, #d6d6d6);
+    background-image: -moz-linear-gradient(top, #c4c4c4, #d6d6d6);
+    background-image: -ms-linear-gradient(top, #c4c4c4, #d6d6d6);
+    background-image: -o-linear-gradient(top, #c4c4c4, #d6d6d6);
+    background-image: linear-gradient(to bottom, #c4c4c4, #d6d6d6);
+  }
+}

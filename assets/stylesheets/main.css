@@ -135,3 +135,20 @@ footer {
 footer p {
   padding: 20px;
 }
+
+/* line 123, ../sass/main.scss */
+button.btn {
+  padding: 10px;
+  border: 0px;
+  color: #272727;
+  background: #f25c65;
+}
+/* line 128, ../sass/main.scss */
+button.btn:hover {
+  background: #c4c4c4;
+  background-image: -webkit-linear-gradient(top, #c4c4c4, #d6d6d6);
+  background-image: -moz-linear-gradient(top, #c4c4c4, #d6d6d6);
+  background-image: -ms-linear-gradient(top, #c4c4c4, #d6d6d6);
+  background-image: -o-linear-gradient(top, #c4c4c4, #d6d6d6);
+  background-image: linear-gradient(to bottom, #c4c4c4, #d6d6d6);
+}
