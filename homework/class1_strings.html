@@ -18,7 +18,7 @@
 
         <!-- HEADER -->
         <h1>Girl Develop It Chicago</h1>
-        <h2>JS101 Class X Exercises: Title</h2>
+        <h2>JS101 Class 1 Homework: Strings</h2>
         <p><a href="http://gdichicago.github.io/gdi-js101">Home</a></p>
       </div>
       <div class="pure-u-1-5"></div>
@@ -35,10 +35,40 @@
 
         <!-- ARTICLE -->
         <article>
-          <h1>Title</h1>
+          <p>These exercises will test your knowledge of string functions. For many of them, you will want to consult the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">JavaScript strings reference</a> to find useful string methods to call.</p>
+        </article>
+        <article>
+          <h1>Dr. Evil</h1>
+          <p>Create a function called <code>DrEvil</code>. It should take a single argument, an amount, and return '&lt;amount&gt; dollars', and it will add '(pinky)' at the end.</p>
+          <p>For example:</p>
+          <pre><code>DrEvil(1000000);</code></pre>
+          <p>Prints: <code>1000000 dollars (pinky)</code></p>
           <button class="btn" onclick="showSolution(1)">See Solution</button>
           <div id="solution1" style="display:none;">
-            <!-- embedded gist -->
+            <script src="https://gist.github.com/feministy/49de80ca0147553a634e.js"></script>
+          </div>
+        </article>
+        <article>
+          <h1>mixUp</h1>
+          <p>
+            Create a function called <code>mixUp</code>. It should take in two strings, and return the concatenation of the two strings (separated by a space) slicing out and swapping the first 2 characters of each. You can assume that the strings are at least 2 characters long. For example:
+          </p>
+          <pre><code>mixUp('mix', pod');</code></pre>
+          <p>Returns:<code>'pox mid'</code></p>
+          <p>Look up the JavaScript string reference to find methods which may be useful!</p>
+          <button class="btn" onclick="showSolution(2)">See Solution</button>
+          <div id="solution2" style="display:none;">
+            <script src="https://gist.github.com/feministy/6e2c426fd7f6cc59f1de.js"></script>
+          </div>
+        </article>
+        <article>
+          <h1>fixStart</h1>
+          <p>Create a function called <code>fixStart</code>. It should take a single argument, a string, and return a version where all occurences of its first character have been replaced with '*', except for the first character itself. You can assume that the string is at least one character long.</p>
+          <pre><code>fixStart('babble');</code></pre>
+          <p>Returns: <code>'ba**ble'</code></p>
+          <button class="btn" onclick="showSolution(3)">See Solution</button>
+          <div id="solution3" style="display:none;">
+            <script src="https://gist.github.com/feministy/d4e2da611fd0ef570d37.js"></script>
           </div>
         </article>
 
