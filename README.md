@@ -2,7 +2,7 @@
 
 *Note: incomplete.*
 
-These slides are a modified from of Pamela Fox's JS101 materials (found [here](https://github.com/pamelafox/teaching-materials)) to fit the GDI teaching template.
+These slides are slightly modified from of Pamela Fox's JS101 materials (found [here](https://github.com/pamelafox/teaching-materials)) to fit the GDI teaching template.
 
 JS101 is meant to be taught in 4 classes, approximately 2-2.5 hours each (a total of 8-10 hours of instruction). Each session includes workshop slides with lecture notes, a series of in-class exercises, and homework to complete between classes.
 
