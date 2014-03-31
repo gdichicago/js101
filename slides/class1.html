@@ -281,6 +281,247 @@ var formalGreeting = greeting + ', ' + title;
 <!-- BREAK -->
 <!-- ************************** -->
 
+        <section>
+            <h1>Comments</h1>
+            <p>Private notes in your code.</p>
+        </section>
+        <section>
+            <h3>Comments</h3>
+            <p>Comments are human-readable text ignored by the computer:</p>
+            <pre><code>
+// You can write single-line comments
+var x = 4; // Or you can comment after a statement
+
+/*
+  Or you can write multi-line comments, if you have something very long
+  to say like this gratuitously long description.
+*/
+            </code></pre>
+        </section>
+        <section>
+            <h3>Comments</h3>
+            <p>There is a time and a place for comments.</p>
+            <p>Comments are good when:</p>
+            <ul>
+                <li>You're learning something new</li>
+                <li>There's something that needs fixing</li>
+                <li>Something is not finished, or needs to be done</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Comments</h3>
+            <p>Comments should <strong>not</strong>:</p>
+            <ul>
+                <li>Explain what your code is doing</li>
+                <li>Provide instructions to the user</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Comments</h3>
+            <p>Too many comments is a <strong>code smell</strong>.</p>
+            <p>It means your code isn't easy to understand.</p>
+            <p>But! Don't worry about this too much when you're learning!</p>
+        </section>
+        <section>
+            <h1>Functions</h1>
+        </section>
+        <section>
+            <h3>Functions</h3>
+            <p>
+                Functions are re-usable collections of statements.
+            </p>
+            <p>First, you declare the function:</p>
+            <pre><code>
+function sayMyName() {
+  console.log("Destiny's Child");
+}
+            </code></pre>
+            <p>Then call it as many times as you want:</p>
+            <pre><code>
+sayMyName();
+            </code></pre>
+            <p>
+                Functions are not run straight away, they are stored in memory until they are called.
+            </p>
+            <aside class="notes">
+                <p>
+                    Alright! We can declare a variable and write a statement - what next? A function is collection of statements that work together to do something. In the same way a statement is like a sentence, a function is like a paragraph.
+                </p>
+                <p>
+                    There is no semi-colon at the end this time. That's because a function declaration is 'compound' statement, or one that is made up of other statements contained inside curly braces.
+                </p>
+            </aside>
+        </section>
+        <section>
+            <h3>Beware!</h3>
+            <h4>Circular dependencies</h4>
+            <p>Don't do this (no, seriously, don't):</p>
+            <pre><code>
+function chicken() {
+    egg();
+}
+
+function egg() {
+    chicken();
+}
+
+egg();
+            </code></pre>
+            <p>This is a loop that will never end. We want to avoid stuff like this.</p>
+        </section>
+        <section>
+            <h1>Functions</h1>
+            <h2>Arguments</h2>
+        </section>
+        <section>
+            <h3>Function Arguments</h3>
+            <p>Functions can accept any number of named arguments:</p>
+            <pre><code>
+function sayMyName(name) {
+  console.log('Hi, ' + name);
+}
+
+sayMyName('Testy McTesterFace');
+            </code></pre>
+            <pre><code>
+function addNumbers(num1, num2) {
+  var result = num1 + num2;
+  console.log(result);
+}
+
+addNumbers(3, 10);
+            </code></pre>
+            <p>You can also pass variables:</p>
+            <pre><code>
+var number = 10;
+addNumbers(number, 2);
+            </code></pre>
+            <aside class="notes">
+                <p>
+                    Arguments (sometimes called parameters) are values that are passed into a function so it can do the same processing job for different data inputs. We can name our arguments in the function definition, inside the brackets, separated by commas. We can then access them by name inside the function just like variables.
+                </p>
+            </aside>
+        </section>
+        <section>
+            <h1>Functions</h1>
+            <h2>Return values</h2>
+        </section>
+        <section>
+            <h3>Return Values</h3>
+            <p>
+                The <code>return</code> keyword returns a value to whoever calls the function (and exits the function):
+            </p>
+            <pre><code>
+function addNumbers(num1, num2) {
+  var result = num1 + num2;
+  return result; // Anything after this line won't be executed
+}
+
+var sum = addNumbers(5, 2);
+            </code></pre>
+            <p>
+                You can use function calls in expressions:
+            </p>
+            <pre><code>
+var biggerSum = addNumbers(2, 5) + addNumbers(3, 2);
+            </code></pre>
+            <aside class="notes">
+                <p>
+                    Functions can be used to do processing tasks, and they can also return a value to the function caller. To do this we use the 'return' keyword. 'Return' also quits the function so it must always be the last statement in your function.
+                </p>
+                <p>
+                    If we assign a function call to a variable, it's value will be the result of running the function, ie whatever is 'returned'. If there is no return statement the variable's value will be 'undefined'.
+                </p>
+            </aside>
+        </section>
+        <section>
+            <h1>Scope</h1>
+            <h2>Variables and Functions</h2>
+        </section>
+        <section>
+            <h3>Variable Scope</h3>
+            <p>
+                Variables have "function scope". They are visible in the function where they're defined.
+            </p>
+            <p>There are two scopes we have to be worried about:</p>
+            <ul>
+                <li>Local scope</li>
+                <li>Global scope</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Local scope</h3>
+            <p>Restricted to the function it is defined in.</p>
+            <pre><code>
+function addNumbers(num1, num2) {
+  var localResult = num1 + num2;
+  console.log("The local result is: " + localResult);
+}
+addNumbers(5, 7);
+console.log(localResult);
+            </code></pre>
+            <p>What happens when we run this code?</p>
+        </section>
+        <section>
+            <h3>Global scope</h3>
+            <p>Available to your entire program.</p>
+            <pre><code>
+var globalResult;
+function addNumbers(num1, num2) {
+  globalResult = num1 + num2;
+  console.log("The global result is: " + globalResult);
+}
+addNumbers(5, 7);
+console.log(globalResult);
+            </code></pre>
+        </section>
+        <section>
+            <h1>Coding Conventions</h1>
+            <h2>Spacing</h2>
+        </section>
+        <section>
+            <h3>Spacing</h3>
+            <p>Use newlines between statements and use spaces (2 or 4, pick one and stick to it) to show blocks.</p>
+            <p><strong>Bad</strong></p>
+            <pre><code>
+function addNumbers(num1,num2) {return num1 + num2;}
+
+function addNumbers(num1, num2) {
+return num1 + num2;
+}
+            </code></pre>
+            <p><strong>Good</strong></p>
+            <pre><code>
+function addNumbers(num1, num2) {
+  return num1 + num2;
+}
+            </code></pre>
+        </section>
+        <section>
+            <h1>Exercises!</h1>
+            <h2><a href="../exercises/class1_functions.html">Functions</a></h2>
+            <p>Raise your hand if you get stuck.</p>
+        </section>
+        <section>
+            <h3>Getting help</h3>
+            <p>Google for questions or check <a href="http://stackoverflow.com">Stack Overflow</a>. Also look on the <a href="https://developer.mozilla.org/en/JavaScript/Guide">Mozilla Developer Network</a>.</p>
+            <p>Before you share your problematic code, post it to <code>jsbin.com</code></p>
+        </section>
+        <section>
+            <h1>Homework</h1>
+            <p>Yes, just like high school.</p>
+        </section>
+        <section>
+            <h3>Homework</h3>
+            <p>Save your code to <code>jsbin.com</code> for easy lookup and console access.</p>
+            <ul>
+                <li><a href="../homework/class1_calculator.html">Write a calculator</a></li>
+                <li><a href="../homework/class1_strings.html">Write functions that play with some strings</a></li>
+            </ul>
+            <br><br>
+            <h4>See you next week!</h4>
+        </section>
+
 
       </div>
     </div>
