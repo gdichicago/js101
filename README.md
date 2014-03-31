@@ -2,15 +2,29 @@
 
 *Note: incomplete.*
 
-These slides are is a modified form of Pamela Fox's JS101 materials, found [here](https://github.com/pamelafox/teaching-materials).
+These slides are a modified from of Pamela Fox's JS101 materials (found [here](https://github.com/pamelafox/teaching-materials)) to fit the GDI teaching template.
 
-JS101 is meant to be taught in 4 classes, approximately 2-2.5 hours each (a total of 8-10 hours of instruction).
+JS101 is meant to be taught in 4 classes, approximately 2-2.5 hours each (a total of 8-10 hours of instruction). Each session includes workshop slides with lecture notes, a series of in-class exercises, and homework to complete between classes.
 
 *Class description and instructions for use pending slide completion.*
 
+## Class website
+
+The class website is available hosted on Github pages [here](http://gdichicago.github.io/gdi-js101).
+
+The website includes slides, exercises, homework, and additional reading for each class.
+
 ## Dependencies
 
+**Reveal.js**
+
+These slides use [Reveal.js](https://github.com/hakimel/reveal.js) as a submodule. For more information on using submodules, see [here](http://git-scm.com/book/en/Git-Tools-Submodules). *Reveal requires you to have Node and Grunt installed.*
+
+There are some custom themes and components inside of the `assets` folder.
+
 **Compass**
+
+*You only need Compass if you're planning on modifying the class website's CSS.*
 
 The CSS for the class website and exercise pages is generated using Sass with Compass. To make changes, first install Compass:
 
@@ -24,7 +38,3 @@ $ compass watch
 ```
 
 Your files will be compiled upon saving.
-
-**Reveal.js**
-
-These slides use [Reveal.js](https://github.com/hakimel/reveal.js) as a submodule. For more information on using submodules, see [here](http://git-scm.com/book/en/Git-Tools-Submodules).
