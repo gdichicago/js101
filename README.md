@@ -10,9 +10,11 @@ JS101 is meant to be taught in 4 classes, approximately 2-2.5 hours each (a tota
 
 ## Class website
 
-The class website is available hosted on Github pages [here](http://gdichicago.github.io/gdi-js101).
+The class website and slides are available hosted on Github pages [here](http://gdichicago.github.io/gdi-js101/). You can teach this class using everything on that page and in this README.
 
 The website includes slides, exercises, homework, and additional reading for each class.
+
+**View notes on slides**: hit 's' and a new window will pop up with a presenter view, including notes, a timer, and some other useful goodies.
 
 ## Dependencies
 
