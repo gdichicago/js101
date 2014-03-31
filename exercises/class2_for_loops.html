@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Girl Develop It Chicago</title>
+  <head>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+    <link href="../assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href="../assets/stylesheets/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <div class="pure-g">
+      <div class="pure-u-1-5"></div>
+      <div class="pure-u-3-5">
+
+
+
+        <!-- HEADER -->
+        <h1>Girl Develop It Chicago</h1>
+        <h2>JS101 Class 2 Exercises: <code>for</code> Loops</h2>
+        <p><a href="http://gdichicago.github.io/gdi-js101">Home</a></p>
+      </div>
+      <div class="pure-u-1-5"></div>
+    </div>
+  </header>
+
+
+
+  <!-- CONTENT -->
+  <div class="pure-g">
+    <div class="pure-u-1-5"></div>
+    <div class="pure-u-3-5">
+      <section>
+
+        <!-- ARTICLE -->
+        <article>
+          <h1>Even/Odd Reporter</h1>
+          <p>Write a for loop that will iterate from 0 to 20.For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").</p>
+          <button class="btn" onclick="showSolution(2)">See Solution</button>
+          <div id="solution2" style="display:none;">
+            <script src="https://gist.github.com/feministy/cf071da6ba399006294f.js"></script>
+          </div>
+        </article>
+
+        <article>
+          <h1>Multiplcation Tables</h1>
+          <p>Write a for loop that will iterate from 0 to 10. For each iteration of the for loop, it will multiply the number by 9 and log the result (e.g. "2 * 9 = 18").</p>
+          <p><strong>Bonus:</strong> Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).</p>
+          <button class="btn" onclick="showSolution(1)">See Solution</button>
+          <div id="solution1" style="display:none;">
+            <script src="https://gist.github.com/feministy/47562291e58fef4c12b4.js"></script>
+          </div>
+        </article>
+
+        <article>
+          <h1>Grade Assigner</h1>
+          <p>Check the results of <code>assignGrade</code> function from the <a href="ifelse.html">conditionals exercise</a> for every value from 60 to 100 - so your log should show "For 89, you got a B. For 90, you got an A.", etc.</p>
+          <button class="btn" onclick="showSolution(3)">See Solution</button>
+          <div id="solution3" style="display:none;">
+            <script src="https://gist.github.com/feministy/f4ebbeb77159cf6d4a7f.js"></script>
+          </div>
+        </article>
+
+        <!-- DISQUS COMMENTS SECTION -->
+        <article>
+          <h1>Discussion</h1>
+          <p>
+            Stuck? Need help? Have another resource? Leave a note here!
+          </p>
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+              var disqus_shortname = 'gdichicago'; // required: replace example with your forum shortname
+
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+      </section>
+
+
+
+
+        <!-- FOOTER -->
+      <footer>
+        <p>
+          <a href="http://girldevelopit.com"><img src="../assets/logo.png" width="300px"></a>
+        </p>
+        <p>
+          Created and maintained by <a href="http://twitter.com/feministy">Liz Abinante</a> of <a href="http://gdichicago.com">Girl Develop It Chicago</a>.
+        </p>
+      </footer>
+    </div>
+    <div class="pure-u-1-5"></div>
+  </div>
+
+  <script>
+    function showSolution(num) {
+      if (confirm('You surrrrre?')) {
+        document.getElementById('solution' + num).style.display = 'block';
+      }
+    }
+  </script>
+  <script type="text/javascript" src="//use.typekit.net/inx7vdr.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</body>
+</html>
