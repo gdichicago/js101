@@ -99,7 +99,7 @@
         <section>
             <h3>Statements</h3>
             <p>Type this in the JavaScript console in your web browser:</p>
-            <pre><code>
+            <pre><code class="javascript">
 console.log('Hello World!');
             </code></pre>
             <p>What happens?</p>
@@ -120,13 +120,13 @@ console.log('Hello World!');
             <h3>Variables</h3>
             <p>Variables have to be declared before you can use them. There are two ways to do this.</p>
             <p><strong>Option 1:</strong></p>
-            <pre><code>
+            <pre><code class="javascript">
 var x;
 x = 5;
 console.log(x);
             </code></pre>
             <p><strong>Option 2:</strong></p>
-            <pre><code>
+            <pre><code class="javascript">
 var x = 5;
 console.log(x);
             </code></pre>
@@ -140,7 +140,7 @@ console.log(x);
         <section>
             <h3>Variables</h3>
             <p>You can also re-assign variables:</p>
-            <pre><code>
+            <pre><code class="javascript">
 var z = 5;
 z = 1;
 console.log(z);
@@ -166,7 +166,7 @@ console.log(z);
         <section>
             <h3>Primitive Data Types: Strings</h3>
             <p>An immutable string of characters.</p>
-            <pre><code>
+            <pre><code class="javascript">
 var greeting = 'Hello Kitty';
 var restaurant = "Taco's Place";
             </code></pre>
@@ -174,7 +174,7 @@ var restaurant = "Taco's Place";
         <section>
             <h3>Primitve Data Types: Numbers</h3>
             <p>Whole numbers (6, -102) or floating point (5.8737).</p>
-            <pre><code>
+            <pre><code class="javascript">
 var myAge = 28;
 var pi = 3.14;
             </code></pre>
@@ -182,7 +182,7 @@ var pi = 3.14;
         <section>
             <h3>Primitve Data Types: Booleans</h3>
             <p>Represents logical values true or false.</p>
-            <pre><code>
+            <pre><code class="javascript">
 var catsAreBest = false;
 var dogsRule = true;
             </code></pre>
@@ -191,14 +191,14 @@ var dogsRule = true;
         <section>
             <h3>Primitve Data Types: <code>undefined</code></h3>
             <p>Represents a value that hasn't been defined.</p>
-            <pre><code>
+            <pre><code class="javascript">
 var notDefinedYet;
             </code></pre>
         </section>
         <section>
             <h3>Primitve Data Types: <code>null</code></h3>
             <p>Represents an explicitly empty value.</p>
-            <pre><code>
+            <pre><code class="javascript">
 var goodPickupLines = null;
             </code></pre>
         </section>
@@ -210,7 +210,7 @@ var goodPickupLines = null;
             <p>
                 You don't tell JS what type of data type it is, it guesses. You can use <code>typeof</code> to see what it thinks:
             </p>
-            <pre><code>
+            <pre><code class="javascript">
 var hello = "Hello, world";
 typeof hello;
             </code></pre>
@@ -236,20 +236,20 @@ typeof hello;
         <section>
             <h3>Variable Naming</h3>
             <p>Okay:</p>
-            <pre><code>
+            <pre><code class="javascript">
 var numPeople;
 var $mainHeader;
 var _num;
 var _Num;
             </code></pre>
             <p>Not okay :(</p>
-            <pre><code>
+            <pre><code class="javascript">
 var 2coolForSchool;
 var soHappy!;
 var 10019;
             </code></pre>
             <p>Dubious:</p>
-            <pre><code>
+            <pre><code class="javascript">
 var HELLOFRIENDS;
 var TACOparty;
             </code></pre>
@@ -261,12 +261,12 @@ var TACOparty;
         <section>
             <h3>Variables and Expressions</h3>
             <p>Variables can also store the result of any "expression":</p>
-            <pre><code>
+            <pre><code class="javascript">
 var x = 2 + 2;
 var y = x * 3;
             </code></pre>
             <p>This includes strings, too:</p>
-            <pre><code>
+            <pre><code class="javascript">
 var name = 'Pamela';
 var greeting = 'Hello ' + name;
 var title = 'your highness';
@@ -290,7 +290,7 @@ var formalGreeting = greeting + ', ' + title;
         <section>
             <h3>Comments</h3>
             <p>Comments are human-readable text ignored by the computer:</p>
-            <pre><code>
+            <pre><code class="javascript">
 // You can write single-line comments
 var x = 4; // Or you can comment after a statement
 
@@ -333,13 +333,13 @@ var x = 4; // Or you can comment after a statement
                 Functions are re-usable collections of statements.
             </p>
             <p>First, you declare the function:</p>
-            <pre><code>
+            <pre><code class="javascript">
 function sayMyName() {
   console.log("Destiny's Child");
 }
             </code></pre>
             <p>Then call it as many times as you want:</p>
-            <pre><code>
+            <pre><code class="javascript">
 sayMyName();
             </code></pre>
             <p>
@@ -358,7 +358,7 @@ sayMyName();
             <h3>Beware!</h3>
             <h4>Circular dependencies</h4>
             <p>Don't do this (no, seriously, don't):</p>
-            <pre><code>
+            <pre><code class="javascript">
 function chicken() {
     egg();
 }
@@ -378,14 +378,14 @@ egg();
         <section>
             <h3>Function Arguments</h3>
             <p>Functions can accept any number of named arguments:</p>
-            <pre><code>
+            <pre><code class="javascript">
 function sayMyName(name) {
   console.log('Hi, ' + name);
 }
 
 sayMyName('Testy McTesterFace');
             </code></pre>
-            <pre><code>
+            <pre><code class="javascript">
 function addNumbers(num1, num2) {
   var result = num1 + num2;
   console.log(result);
@@ -394,7 +394,7 @@ function addNumbers(num1, num2) {
 addNumbers(3, 10);
             </code></pre>
             <p>You can also pass variables:</p>
-            <pre><code>
+            <pre><code class="javascript">
 var number = 10;
 addNumbers(number, 2);
             </code></pre>
@@ -413,7 +413,7 @@ addNumbers(number, 2);
             <p>
                 The <code>return</code> keyword returns a value to whoever calls the function (and exits the function):
             </p>
-            <pre><code>
+            <pre><code class="javascript">
 function addNumbers(num1, num2) {
   var result = num1 + num2;
   return result; // Anything after this line won't be executed
@@ -424,7 +424,7 @@ var sum = addNumbers(5, 2);
             <p>
                 You can use function calls in expressions:
             </p>
-            <pre><code>
+            <pre><code class="javascript">
 var biggerSum = addNumbers(2, 5) + addNumbers(3, 2);
             </code></pre>
             <aside class="notes">
@@ -454,7 +454,7 @@ var biggerSum = addNumbers(2, 5) + addNumbers(3, 2);
         <section>
             <h3>Local scope</h3>
             <p>Restricted to the function it is defined in.</p>
-            <pre><code>
+            <pre><code class="javascript">
 function addNumbers(num1, num2) {
   var localResult = num1 + num2;
   console.log("The local result is: " + localResult);
@@ -467,7 +467,7 @@ console.log(localResult);
         <section>
             <h3>Global scope</h3>
             <p>Available to your entire program.</p>
-            <pre><code>
+            <pre><code class="javascript">
 var globalResult;
 function addNumbers(num1, num2) {
   globalResult = num1 + num2;
@@ -485,7 +485,7 @@ console.log(globalResult);
             <h3>Spacing</h3>
             <p>Use newlines between statements and use spaces (2 or 4, pick one and stick to it) to show blocks.</p>
             <p><strong>Bad</strong></p>
-            <pre><code>
+            <pre><code class="javascript">
 function addNumbers(num1,num2) {return num1 + num2;}
 
 function addNumbers(num1, num2) {
@@ -493,7 +493,7 @@ return num1 + num2;
 }
             </code></pre>
             <p><strong>Good</strong></p>
-            <pre><code>
+            <pre><code class="javascript">
 function addNumbers(num1, num2) {
   return num1 + num2;
 }
