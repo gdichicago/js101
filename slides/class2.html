@@ -20,8 +20,61 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <h1>Slide!</h1>
-          <aside>Slide notes!</aside>
+          <h1>JavaScript 101</h1>
+          <p><strong>Part 2</strong><br>Control Flow and More Data Types</p>
+        </section>
+        <section>
+          <h3>Review: Terminology</h3>
+          <p>In the following code, name the data types used, describe the scope for the variables, and spot the:<br><br>
+            <code>statement</code>,
+            <code>variable</code>,
+            <code>expression</code>,
+            <code>operator</code>,
+            <code>function</code>,
+            <code>argument</code>,
+            <code>return value</code>
+          </p>
+
+          <pre><code class="javascript">function calculateTip(total) {
+  var tipPercent = 0.15;
+  return (total * tipPercent);
+}
+
+var billTotal = 10.00;
+var billTip = calculateTip(billTotal);
+var receipt = 'Total: ' + billTotal + ' Tip: ' + billTip;
+console.log(receipt);
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Review: Terminology</h3>
+          <code>statement</code>
+          <pre><code class="javascript">console.log(receipt);</code></pre>
+          <code>variable</code>
+          <pre><code class="javascript">var billTotal = 10.00;</code></pre>
+
+          <code>expression</code>
+          <pre><code class="javascript">var receipt = 'Total: ' + billTotal + ' Tip: ' + bill;</pre></code>
+
+          <code>operator</code>
+          <pre><code class="javascript">+</code></pre>
+        </section>
+        <section>
+          <h3>Review: Terminology</h3>
+
+          <code>function</code>
+          <pre><code class="javascript">function calculateTip(total) {
+  var tipPercent = 0.15;
+  return (total * tipPercent);
+}
+          </code></pre>
+          <code>argument</code>
+          <pre><code class="javascript">(total)
+(billTotal)</code></pre>
+
+          <code>return value</code>
+          <pre><code class="javascript">return (total * tipPercent);</code></pre>
         </section>
       </div>
     </div>
