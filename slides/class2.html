@@ -76,6 +76,91 @@ console.log(receipt);</code></pre>
           <pre><code class="javascript">return (total * tipPercent);</code></pre>
         </section>
 
+<!-- Comparison Operators -->
+        <section>
+          <h1>Operators</h1>
+          <p>Comparison Operators</p>
+          <p>Use these operators to compare two values for equality, inequality, or difference.</p>
+        </section>
+
+        <section>
+          <h3>Comparison Operators</h3>
+          <ul>
+            <li>Compares two operands (items) and returns <code>true</code> or <code>false</code></li>
+            <li>Operands can be numerial, string, logical, or object values</li>
+            <li>If the operands aren't the same type, JavaScript tries to convert before comparing, <strong>except for</strong>...</li>
+            <li>Strict comparisons don't attempt conversion</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Equality</h3>
+          <pre><code class="javascrpt">var myAge = 28;
+myAge == 28;</code></pre>
+        </section>
+
+        <section>
+          <h3>Strict equality</h3>
+          <p>Does not convert objects!</p>
+          <pre><code class="javascript">var myAge = 28;
+myAge === 28;</code></pre>
+          <p>What happens when we do this?</p>
+          <pre><code class="javascript">var age = '28';
+age === 28;</code></pre>
+        </section>
+
+        <section>
+          <h3>Inequality</h3>
+          <pre><code class="javascript">var myAge = 28;
+myAge != 28;</code></pre>
+        </section>
+
+        <section>
+          <h3>Strict inequality</h3>
+          <pre><code class="javascript">var myAge = 28;
+myAge !== 28;</code></pre>
+        </section>
+
+        <section>
+          <h3>Greater than</h3>
+          <pre><code class="javascript">var myAge = 28;
+myAge &gt; 28;</code></pre>
+        </section>
+
+        <section>
+          <h3>Less than</h3>
+          <pre><code class="javascript">var myAge = 28;
+myAge &lt; 28;</code></pre>
+        </section>
+
+        <section>
+          <h3>Greater than or equal</h3>
+          <pre><code class="javascript">var myAge = 28;
+myAge &gt;= 28;</code></pre>
+        </section>
+
+        <section>
+          <h3>Less than or equal</h3>
+          <pre><code class="javascript">var myAge = 28;
+myAge &lt;= 28;</code></pre>
+        </section>
+
+<!-- <table border="1" cellspacing="5" cellpadding="5" style="font-size: 16px; line-height: 1em;">
+  <thead>
+  <tr><td>Operator  <td>Meaning <td>True expressions
+  <tbody>
+  <tr><td>==    <td>Equality <td><code>myAge == 28</code> <br> <code>myAge == '28'</code> <br> <code>28 == '28'</code>
+  <tr><td>===  <td>Strict equality <td><code>myAge === 28</code>
+  <tr><td>!=     <td>Inequality <td><code>myAge != 29</code>
+  <tr><td>!==   <td>Strict inequality <td><code>myAge != '28'</code> <br> <code>28 != '28'</code>
+  <tr><td>&gt;  <td>Greater than <td><code>myAge &gt; 25</code> <br> <code>'28' &gt; 25</code>
+  <tr><td>&gt;=<td>Greater than or equal <td><code>myAge &gt;= 28</code> <br> <code>'28' &gt;= 25</code>
+  <tr><td>&lt;   <td>Less than <td><code>myAge &lt; 30</code>  <br> <code>'28' &lt; 30</code>
+  <tr><td>&lt;= <td>Less than or equal <td><code>myAge &lt;= 28</code>  <br> <code>'28' &lt;= 28 </code>
+</table>
+ -->
+
+<!-- if statments -->
         <section>
           <h1>Control Flow</h1>
           <p><code>if</code> statements</p>
