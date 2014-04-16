@@ -146,20 +146,73 @@ myAge &gt;= 28;</code></pre>
 myAge &lt;= 28;</code></pre>
         </section>
 
-<!-- <table border="1" cellspacing="5" cellpadding="5" style="font-size: 16px; line-height: 1em;">
-  <thead>
-  <tr><td>Operator  <td>Meaning <td>True expressions
-  <tbody>
-  <tr><td>==    <td>Equality <td><code>myAge == 28</code> <br> <code>myAge == '28'</code> <br> <code>28 == '28'</code>
-  <tr><td>===  <td>Strict equality <td><code>myAge === 28</code>
-  <tr><td>!=     <td>Inequality <td><code>myAge != 29</code>
-  <tr><td>!==   <td>Strict inequality <td><code>myAge != '28'</code> <br> <code>28 != '28'</code>
-  <tr><td>&gt;  <td>Greater than <td><code>myAge &gt; 25</code> <br> <code>'28' &gt; 25</code>
-  <tr><td>&gt;=<td>Greater than or equal <td><code>myAge &gt;= 28</code> <br> <code>'28' &gt;= 25</code>
-  <tr><td>&lt;   <td>Less than <td><code>myAge &lt; 30</code>  <br> <code>'28' &lt; 30</code>
-  <tr><td>&lt;= <td>Less than or equal <td><code>myAge &lt;= 28</code>  <br> <code>'28' &lt;= 28 </code>
-</table>
- -->
+
+<!-- Logical operators -->
+
+        <section>
+          <h1>Operators</h1>
+          <p>Logical</p>
+          <p>And, or, not.</p>
+        </section>
+
+        <section>
+          <h3>Logical Operators</h3>
+          <ul>
+            <li>Typically used with comparison operators</li>
+            <li>Compare two operands and returns <code>true</code> or <code>false</code></li>
+            <li>Allow you to test several conditions at once!</li>
+            <li>Always read <strong>left to right</strong></li>
+            <li>Only continue testing if needed</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3><code>&&</code></h3>
+          <p><strong>Returns true if:</strong> both statements are true.</p>
+          <pre><code class="javascript">var posNum = 4;
+var negNum = -2;</code></pre>
+          <p>True expressions:</p>
+          <pre><code class="javascript">posNum &gt; 0 && negNum &lt; 0
+4 &gt; 0 && -2 &lt; 0</code></pre>
+          <p>False expressions:</p>
+          <pre><code class="javascript">posNum &gt; 0 && negNum &gt; 0
+4 &gt; 0 && -2 &gt; 0</code></pre>
+        </section>
+
+        <section>
+          <h3><code>||</code></h3>
+          <p><strong>Returns true if:</strong> <em>either</em> statement is true.</p>
+          <pre><code class="javascript">var posNum = 4;
+var negNum = -2;</code></pre>
+          <p>True expressions:</p>
+          <pre><code class="javascript">posNum &gt; 0 || negNum &gt; 0
+4 &gt; 0 || -2 &gt; 0</code></pre>
+          <p>False expressions:</p>
+          <pre><code class="javascript">posNum &gt; 0 || negNum &lt; 0
+4 &gt; 0 || -2 &lt; 0</code></pre>
+        </section>
+
+        <section>
+          <h3><code>!</code></h3>
+          <p><strong>Returns true if:</strong> the statement is not true.</p>
+          <pre><code class="javascript">var posNum = 4;
+var negNum = -2;</code></pre>
+          <p>True expressions:</p>
+          <pre><code class="javascript">!(posNum === negNum)
+!(posNum < 0)</code></pre>
+          <p>False expressions:</p>
+          <pre><code class="javascript">!(posNum !== negNum)
+!(posNum &gt; 0)</code></pre>
+        </section>
+
+        <section>
+          <h3>Using mutiple operators</h3>
+          <p>When combining together multiple conditions, use parantheses to group:</p>
+          <pre><code class="javascript">var myAge = 28;
+if ((myAge &gt;= 0 && myAge &lt; 3)  || myAge &gt; 90) {
+  console.log('You\'re not quite in your peak.');
+}</code></pre>
+        </section>
 
 <!-- if statments -->
         <section>
