@@ -277,6 +277,46 @@ if (firstName) {
   console.log("Your name is " + firstName);
 }</code></pre>
           </section>
+          
+<!-- Short-circuit evaluation -->
+          <section>
+            <h1>Short-Circuit Evaluation</h1>
+            <p>How JavaScript saves us time!</p>
+          </section>
+          
+          <section>
+            <h3>Short-Circuit Evaluation</h3>
+            <p>JavaScript evaluates all logical operators from left to right. It <em>stops evaluating</em> as soon as it knows the answer.</p>
+            <p>When it stops depends on the operator you're using.</p>
+          </section>
+          
+          <section>
+            <h3>Short-Circuit Evaluation: <code>&&</code></h3>
+            <p>Stops as soon as it hits a <code>false</code> expression because it requires <em>all</em> things to be true.</p>
+            <pre><code class="javascript">var name = "";
+var age = 28;
+if (name && age) {
+  console.log("Hello!);
+}</code></pre>
+            <p>Because <code>name</code> is false, it won't ever get to <code>age</code>.</p>
+          </section>
+          
+          <section>
+            <h3>Short-circuit evaluation: <code>||</code></h3>
+            <p>Stops as soon as it hits a <code>true</code> expression because it only needs <em>one</em> thing to be true.</p>
+            <pre><code class="javascript">var name = "";
+var age = 28;
+if (name || age) {
+  console.log("Hello!);
+}</code></pre>
+            <p><code>name</code> is false, but <code>age</code> is true, so this goes the whole way through.</p>
+            
+            <p>If we change this around to:</p>
+            <pre><code class="javascript">if (age || name) {
+  console.log("Hello!);
+}</code></pre>
+            <p><code>age</code> is true, so it stops evaluating.</p>
+          </section>
       </div>
     </div>
     <script src="../reveal/lib/js/head.min.js"></script>
