@@ -317,6 +317,41 @@ if (name || age) {
 }</code></pre>
             <p><code>age</code> is true, so it stops evaluating.</p>
           </section>
+          
+<!-- if/else statements -->
+          
+          <section>
+            <h1>Control Flow</h1>
+            <p><code>if</code>, <code>else if</code>, and <code>else</code> statements</p>
+          </section>
+          
+          <section>
+            <h3><code>if</code>/<code>else</code> statements</h3>
+            <p>Use <code>else</code> to give JavaScript an alternative statement. <code>else</code> runs when the <code>if</code> statement doesn't run.</p>
+            <pre><code class="javascript">var age = 28;
+if (age >= 16) {
+  console.log("Yay, you can drive!);
+} else {
+  console.log("Sorry, but you have " + (16 - age) + " years until you can drive.");
+}</code></pre>
+            <p>What can we change <code>age</code> to if we wanted to make this hit <code>else</code> instead of <code>if</code>?</p>
+          </section>
+          
+          <section>
+            <h3><code>if</code>/<code>else if</code>/<code>else</code></h3>
+            <p>If you want multiple checks, you can use <code>else if</code> to run through them all.</p>
+            <pre><code class="javascript">var age = 20;
+if (age >= 35) {
+  console.log("You can vote and hold any place in government!");
+} else if (age >= 25) {
+  console.log("You can vote and run for Senate!");
+} else if (age >= 18) {
+  console.log("You can vote!");
+} else {
+  console.log("You have no voice in government!");
+}</code></pre>
+            <p>Very important to remember: JavaScript will pick the <em>first</em> match, not the <em>best</em> match.</p>
+          </section>
       </div>
     </div>
     <script src="../reveal/lib/js/head.min.js"></script>
