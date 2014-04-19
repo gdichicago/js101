@@ -403,6 +403,24 @@ while (x &lt; 5) {
   console.log(i);
 }</code></pre>
             <p>We can use i, j, k, etc. It's harder to do an infinite loop with <code>for</code>, but it's still possible (like if you make a typo).</p>
+            <p>To save space, we can use this for the update part: <code>i++</code>. It is shorthand for: <code>i = i + 1</code>. Most people use this!</p>
+          </section>
+          
+          <section>
+            <h1>Loops</h1>
+            <p>Breaking out of loops with <code>break</code>.</p>
+          </section>
+          
+          <section>
+            <h3><code>break</code> statement</h3>
+            <p>To prematurely exit a loop, you can use the <code>break</code> statement:</p>
+            <pre><code class="javascript">for (var current = 100; current &lt; 200; current++) {
+  console.log("Testing " + current);
+  if (current % 7 == 0) {
+    console.log("Found it! " + current);
+    break;
+  }
+}</code></pre>
           </section>
 
           
