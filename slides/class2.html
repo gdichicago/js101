@@ -238,6 +238,9 @@ var negNum = -2;</code></pre>
 if ((myAge &gt;= 0 && myAge &lt; 3)  || myAge &gt; 90) {
   console.log('You\'re not quite in your peak.');
 }</code></pre>
+          <aside class="notes">
+            <p>Logical operators are typically used with Boolean (logical) values; when they are, they return a Boolean value. However, the && and || operators actually return the value of one of the specified operands, so if these operators are used with non-Boolean values, they may return a non-Boolean value. The logical operators are described on the slides.</p>
+            <p>It is important to remember that in both scenarios conditions are tested left to right, and only continue testing if needed.</p></aside>
         </section>
 
 <!-- truthy/falsey -->
@@ -245,6 +248,35 @@ if ((myAge &gt;= 0 && myAge &lt; 3)  || myAge &gt; 90) {
           <h1>Operators</h1>
           <p>An important lesson: truthy and falsey</p>
         </section>
+          
+          <section>
+            <h3>Truthy</h3>
+            <p>If you don't use a comparison or logical operator, JavaScript tries to figure out if the value is "truth-y".</p>
+            <pre><code class="javascript">var dogsRule = true;
+if (dogsRule) {
+  console.log("Yay dogs!");
+}</code></pre>
+          </section>
+          
+          <section>
+            <h3>Falsey</h3>
+            <p>Values that are "false-y": <code>false</code>, the empty string (<code>""</code>), the number <code>0</code>, <code>undefined</code>, <code>null</code>.</p>
+            
+            <pre><code class="javascript">var name = '';
+if (name) {
+  console.log("Hello, " + name);
+}
+
+var points = 0;
+if (points) {
+  console.log("You have " + points + " points.");
+}
+
+var firstName;
+if (firstName) {
+  console.log("Your name is " + firstName);
+}</code></pre>
+          </section>
       </div>
     </div>
     <script src="../reveal/lib/js/head.min.js"></script>
