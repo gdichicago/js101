@@ -430,59 +430,85 @@ while (x &lt; 5) {
             <h1>Exercise!</h1>
             <h2><a href="../exercises/class2_for_loops.html">Loops</a></h2>
             <p>If you get stuck, raise your hand.</p>
-        </section>
+          </section>
 
 
 <!-- ************************** -->
 <!-- BREAK -->
 <!-- ************************** -->
           
-        <section>
-          <h1>Arrays</h1>
-          <p>A data type containing an ordered list of values.</p>
-        </section>
-          
-        <section>
-          <h3>Arrays</h3>
-          <p>Arrays are a data type that hold an ordered list of values. These values can be any type. Arrays look like this:</p>
-          <pre><code class="javascript">var arrayName = [element0, element1, element2];</code></pre>
-          <p>We can make an array of our favorite things:</p>
-          <pre><code class="javascript">var favoriteThings = ["kittens", "brown paper packages", "ribbons"]</code></pre>
-          <p>And find out the length:</p>
-          <pre><code class="javascript">console.log(favoriteThings.length);</code></pre>
-        </section>
-          
-        <section>
-          <h3>Accessing things in arrays</h3>
-          <p>You can access things in an array using bracket notation and the position. The first item in your array is at position 0.</p>
-          <pre><code class="javascript">var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
+          <section>
+            <h1>Arrays</h1>
+            <p>A data type containing an ordered list of values.</p>
+          </section>
+
+          <section>
+            <h3>Arrays</h3>
+            <p>Arrays are a data type that hold an ordered list of values. These values can be any type. Arrays look like this:</p>
+            <pre><code class="javascript">var arrayName = [element0, element1, element2];</code></pre>
+            <p>We can make an array of our favorite things:</p>
+            <pre><code class="javascript">var favoriteThings = ["kittens", "brown paper packages", "ribbons"]</code></pre>
+            <p>And find out the length:</p>
+            <pre><code class="javascript">console.log(favoriteThings.length);</code></pre>
+          </section>
+
+          <section>
+            <h3>Accessing things in arrays</h3>
+            <p>You can access things in an array using bracket notation and the position. The first item in your array is at position 0.</p>
+            <pre><code class="javascript">var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
 var firstColor = rainbowColors[0];
 var lastColor = rainbowColors[6];</code></pre>
-          <p>What is <code>firstColor</code>? What is <code>lastColor</code>?</p>
-        </section>
-          
-          
-        <section>
-          <h3>Changing items in arrays</h3>
-          <p>You can also use bracket notation to change items in the array.</p>
-          <pre><code class="javascript">var myFavoriteThings = ['Broccoli', 60481, 'Love Actually'];
-myFavoriteThings[0] = 'Celery Root';</code></pre>
-          <p>Now when we call <code>favorieThings[0]</code>, what do we get?</p>
-        </section>
-          
-          
-        <section>
-          <h3>Adding items to arrays</h3>
-          <p>If you know how many items are in an array, you can use bracket notation to add things to the end.</p>
-          <pre><code class="javascript">var myFavoriteThings = ['Broccoli', 60481, 'Love Actually'];
-myFavoriteThings[4] = 'Sunshine';</code></pre>
-          <p>If you don't know how many items you have, there's a handy method for this called <code>push()</code>. It looks like this:</p>
-          <pre><code class="javascript">myFavoriteThings.push("Dancing");
-console.log(myFavoriteThings);</code></pre>
-          <p>What's in our array now?</p>
-        </section>
+            <p>What is <code>firstColor</code>? What is <code>lastColor</code>?</p>
+          </section>
 
+
+          <section>
+            <h3>Changing items in arrays</h3>
+            <p>You can also use bracket notation to change items in the array.</p>
+            <pre><code class="javascript">var myFavoriteThings = ['Broccoli', 60481, 'Love Actually'];
+myFavoriteThings[0] = 'Celery Root';</code></pre>
+            <p>Now when we call <code>favorieThings[0]</code>, what do we get?</p>
+          </section>
+
+
+          <section>
+            <h3>Adding items to arrays</h3>
+            <p>If you know how many items are in an array, you can use bracket notation to add things to the end.</p>
+            <pre><code class="javascript">var myFavoriteThings = ['Broccoli', 60481, 'Love Actually'];
+myFavoriteThings[4] = 'Sunshine';</code></pre>
+            <p>If you don't know how many items you have, there's a handy method for this called <code>push()</code>. It looks like this:</p>
+            <pre><code class="javascript">myFavoriteThings.push("Dancing");
+  console.log(myFavoriteThings);</code></pre>
+            <p>What's in our array now?</p>
+          </section>
+
+          <section>
+            <h3>Iterating through arrays</h3>
+            <p>Use a <code>for</code> loop to easily process each item in an array:</p>
+            <pre><code class="javascript">var rainbowColors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+
+for (var i = 0; i &lt; rainbowColors.length; i++) {
+  console.log(rainbowColors[i]);
+}</code></pre>
+          </section>
+
+          <section>
+            <h1>Exercise!</h1>
+            <h2><a href="../exercises/class2_arrays.html">Arrays</a></h2>
+          </section>
           
+          <section>
+            <h3>Getting help</h3>
+            <p>Google for questions or check <a href="http://stackoverflow.com">Stack Overflow</a>. Also look on the <a href="https://developer.mozilla.org/en/JavaScript/Guide">Mozilla Developer Network</a>.</p>
+            <p>Before you share your problematic code, post it to <code>jsbin.com</code></p>
+          </section>
+          
+          <section>
+            <h1>Homework</h1>
+            <h2><a href="../homework/class2_word_guesser.html">Word guesser</a></h2>
+            <p>If you get stuck between now and next class, put your code on <a href="http://jsbin.com">JSBin.com</a> and email it to your instructor.</p>
+          </section>
+
       </div>
     </div>
     <script src="../reveal/lib/js/head.min.js"></script>
