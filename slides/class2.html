@@ -368,7 +368,8 @@ if (age &gt;= 35) {
             <h1>Loops</h1>
             <p><code>while</code> loop</p>
           </section>
-          
+
+<!-- while loops -->
           <section>
             <h3><code>while</code> loop</h3>
             <p>The <code>while</code> loop tells JavaScript to repeat statements until a condition is true. A <code>while</code> statement looks like this:</p>
@@ -386,7 +387,8 @@ while (x &lt; 5) {
 }</code></pre>
             <p>Be <em>very careful</em>! It's easy to accidentally cause an infinite loop where your code never stops running.</p>
           </section>
-            
+   
+<!-- for loops -->
           <section>
             <h1>Loops</h1>
             <p><code>for</code> loop</p>
@@ -405,7 +407,8 @@ while (x &lt; 5) {
             <p>We can use i, j, k, etc. It's harder to do an infinite loop with <code>for</code>, but it's still possible (like if you make a typo).</p>
             <p>To save space, we can use this for the update part: <code>i++</code>. It is shorthand for: <code>i = i + 1</code>. Most people use this!</p>
           </section>
-          
+
+<!-- breaking out of loops -->
           <section>
             <h1>Loops</h1>
             <p>Breaking out of loops with <code>break</code>.</p>
@@ -422,6 +425,62 @@ while (x &lt; 5) {
   }
 }</code></pre>
           </section>
+          
+          <section>
+            <h1>Exercise!</h1>
+            <h2><a href="../exercises/class2_for_loops.html">Loops</a></h2>
+            <p>If you get stuck, raise your hand.</p>
+        </section>
+
+
+<!-- ************************** -->
+<!-- BREAK -->
+<!-- ************************** -->
+          
+        <section>
+          <h1>Arrays</h1>
+          <p>A data type containing an ordered list of values.</p>
+        </section>
+          
+        <section>
+          <h3>Arrays</h3>
+          <p>Arrays are a data type that hold an ordered list of values. These values can be any type. Arrays look like this:</p>
+          <pre><code class="javascript">var arrayName = [element0, element1, element2];</code></pre>
+          <p>We can make an array of our favorite things:</p>
+          <pre><code class="javascript">var favoriteThings = ["kittens", "brown paper packages", "ribbons"]</code></pre>
+          <p>And find out the length:</p>
+          <pre><code class="javascript">console.log(favoriteThings.length);</code></pre>
+        </section>
+          
+        <section>
+          <h3>Accessing things in arrays</h3>
+          <p>You can access things in an array using bracket notation and the position. The first item in your array is at position 0.</p>
+          <pre><code class="javascript">var rainbowColors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
+var firstColor = rainbowColors[0];
+var lastColor = rainbowColors[6];</code></pre>
+          <p>What is <code>firstColor</code>? What is <code>lastColor</code>?</p>
+        </section>
+          
+          
+        <section>
+          <h3>Changing items in arrays</h3>
+          <p>You can also use bracket notation to change items in the array.</p>
+          <pre><code class="javascript">var myFavoriteThings = ['Broccoli', 60481, 'Love Actually'];
+myFavoriteThings[0] = 'Celery Root';</code></pre>
+          <p>Now when we call <code>favorieThings[0]</code>, what do we get?</p>
+        </section>
+          
+          
+        <section>
+          <h3>Adding items to arrays</h3>
+          <p>If you know how many items are in an array, you can use bracket notation to add things to the end.</p>
+          <pre><code class="javascript">var myFavoriteThings = ['Broccoli', 60481, 'Love Actually'];
+myFavoriteThings[4] = 'Sunshine';</code></pre>
+          <p>If you don't know how many items you have, there's a handy method for this called <code>push()</code>. It looks like this:</p>
+          <pre><code class="javascript">myFavoriteThings.push("Dancing");
+console.log(myFavoriteThings);</code></pre>
+          <p>What's in our array now?</p>
+        </section>
 
           
       </div>
