@@ -329,7 +329,7 @@ if (name || age) {
             <h3><code>if</code>/<code>else</code> statements</h3>
             <p>Use <code>else</code> to give JavaScript an alternative statement. <code>else</code> runs when the <code>if</code> statement doesn't run.</p>
             <pre><code class="javascript">var age = 28;
-if (age >= 16) {
+if (age &gt;= 16) {
   console.log("Yay, you can drive!);
 } else {
   console.log("Sorry, but you have " + (16 - age) + " years until you can drive.");
@@ -341,11 +341,11 @@ if (age >= 16) {
             <h3><code>if</code>/<code>else if</code>/<code>else</code></h3>
             <p>If you want multiple checks, you can use <code>else if</code> to run through them all.</p>
             <pre><code class="javascript">var age = 20;
-if (age >= 35) {
+if (age &gt;= 35) {
   console.log("You can vote and hold any place in government!");
-} else if (age >= 25) {
+} else if (age &gt;= 25) {
   console.log("You can vote and run for Senate!");
-} else if (age >= 18) {
+} else if (age &gt;= 18) {
   console.log("You can vote!");
 } else {
   console.log("You have no voice in government!");
@@ -380,7 +380,7 @@ if (age >= 35) {
           <section>
             <h3><code>while</code> loop</h3>
             <pre><code class="javascript">var x = 0;
-while (x < 5) {
+while (x &lt; 5) {
   console.log(x);
   x = x + 1;
 }</code></pre>
@@ -394,7 +394,15 @@ while (x < 5) {
             
           <section>
             <h3><code>for</code> loop</h3>
-            
+            <p>The <code>for</code> loop is another way of repeating statements, more specialized than <code>while</code>. There are more pieces:</p>
+            <pre><code class="javascript">for (initialize; condition; update) {
+// statements to repeat
+}</code></pre>
+            <p>What it looks like with real values:</p>
+            <pre><code class="javascript">for (var i = 0; i &lt; 5; i = i + 1) {
+  console.log(i);
+}</code></pre>
+            <p>We can use i, j, k, etc. It's harder to do an infinite loop with <code>for</code>, but it's still possible (like if you make a typo).</p>
           </section>
 
           
