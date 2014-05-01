@@ -1,6 +1,6 @@
 # Girl Develop It JS101
 
-*Note: incomplete.*
+*Note: incomplete. Slides, materials, and homework for classes 3 and 4 aren't done yet.*
 
 These slides are slightly modified from Pamela Fox's JS101 materials (found [here](https://github.com/pamelafox/teaching-materials)) to fit the GDI teaching template.
 
@@ -10,7 +10,7 @@ JS101 is meant to be taught in 4 classes, approximately 2-2.5 hours each (a tota
 
 ## Class website
 
-The class website and slides are available hosted on Github pages [here](http://gdichicago.github.io/gdi-js101/). You can teach this class using everything on that page and in this README.
+The class website and slides are available hosted [here](http://gdichicago.com/classes/js101/index.html). You can teach this class using everything on that page.
 
 The website includes slides, exercises, homework, and additional reading for each class.
 
@@ -18,25 +18,10 @@ The website includes slides, exercises, homework, and additional reading for eac
 
 ## Dependencies
 
+All CSS and JavaScript used for this are hosted on AWS. You don't have to worry about them.
+
 **Reveal.js**
 
-These slides use [Reveal.js](https://github.com/hakimel/reveal.js) as a submodule. For more information on using submodules, see [here](http://git-scm.com/book/en/Git-Tools-Submodules). *Reveal requires you to have Node and Grunt installed.*
+These slides use [Reveal.js](https://github.com/hakimel/reveal.js) that has been edited for the GDI brand. You don't have to do anything to make it work, it should be there already.
 
-There are some custom themes and components inside of the `assets` folder.
-
-**Compass**
-
-*You only need Compass if you're planning on modifying the class website's CSS.*
-
-The CSS for the class website and exercise pages is generated using Sass with Compass. To make changes, first install Compass:
-
-`$ gem install compass`
-
-Then change into the `assets` directory and tell Compass to watch:
-
-```
-$ cd assets/
-$ compass watch
-```
-
-Your files will be compiled upon saving.
+If you don't have an internet connection, or you're worried about the internet not work, load the slides before you arrive at the workshop.
