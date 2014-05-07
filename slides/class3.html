@@ -19,7 +19,90 @@
       <div class="slides">
         <section>
           <h1>JavaScript 101</h1>
-          <p><strong>Part 3</strong><br>Control Flow and More Data Types</p>
+          <p><strong>Part 3</strong><br>Objects</p>
+        </section>
+
+        <section>
+          <h3>What are objects?</h3>
+          <p>Objects allow us to describe an entity that has a complex structure, and more closely resembles something that exist in the real world.</p>
+          <p>Arrays and functions are both special types of objects in Javascript. We can also define our own objects to represent complex data structures.</p>
+        </section>
+        <section>
+          <h3>What are object attributes?</h3>
+          <p>Javascript objects have attributes - called 'properties', and things they can do - called 'methods'. For example, we can create an object that represents a dog in Javascript. It could have properties like 'colour' and 'breed', and methods like 'bark' and 'chaseCat'.</p>
+        </section>
+
+        <section>
+          <img src="https://s3-us-west-2.amazonaws.com/gifgifgiffy/annoyed/wat.jpg" alt="WAT">
+        </section>
+
+        <section>
+          <h3>Object syntax</h3>
+          <p>Objects are a data type that let us store a collection of properties and methods.</p>
+          <pre><code class="javascript">var objectName = {
+  propertyName: propertyValue,
+  propertyName: propertyValue,
+};</code></pre>
+        </section>
+
+        <section>
+          <h3>A real, actual example</h3>
+
+          <pre><code class="javascript">var aboutMe = {
+  hometown: "Pasadena, CA",
+  hair: "brown"
+};</code></pre>
+
+          <pre><code class="javascript">var lizzieTheCat = {
+  age: 18,
+  furColor: "grey",
+  likes: ["catnip", "milk"],
+  birthday: {"month": 7, "day": 17, year: 1994}
+};</code></pre>
+        </section>
+
+        <section>
+          <h3>Accessing objects: two ways</h3>
+          <p>Access properties using "dot notation":</p>
+          <pre><code class="javascript">var aboutMe = {
+  hometown: "Pasadena, CA",
+  hair: "brown"
+};
+
+var myHometown = aboutMe.hometown;</code></pre>
+
+          <p>Or using "bracket notation" (like arrays):</p>
+          <pre><code class="javascript">var myHair = aboutMe["hair"];</code></pre>
+
+          <p><strong>Important!</strong> Non-existent properties will return undefined:</p>
+          <pre><code class="javascript">var myGender = aboutMe["gender"];</code></pre>
+        </section>
+
+        <section>
+          <h3>Changing objects</h3>
+          <p>Use dot or bracket notation with the assignment operator to change objects.</p>
+        </section>
+
+        <section>
+          <h3>Changing properties</h3>
+          <p>Change existing properties:</p>
+          <pre><code class="javascript">var aboutMe = {
+  hometown: "Pasadena, CA",
+  hair: "brown"
+};
+aboutMe.hair = "blue";</code></pre>
+        </section>
+
+        <section>
+          <h3>Adding properties</h3>
+          <p>Or add new properties:</p>
+          <pre><code class="javascript">aboutMe.gender = "female";</code></pre>
+        </section>
+
+        <section>
+          <h3>Deleting properties</h3>
+          <p>You can also delete properties:</p>
+          <pre><code class="javascript">delete aboutMe.gender;</code></pre>
         </section>
 
       </div>
