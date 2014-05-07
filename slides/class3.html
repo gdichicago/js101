@@ -143,6 +143,61 @@ describeCat(lizzieTheCat);</code></pre>
           <p>If you get stuck, raise your hand.</p>
         </section>
 
+        <section>
+          <h3>Object methods</h3>
+          <p>Object properties can also be functions. Object functions are called "methods".</p>
+
+          <pre><code class="javascript">var lizzieTheCat = {
+  age: 18,
+  furColor: 'grey',
+  meow: function() {
+    console.log('meowww');
+  },
+  eat: function(food) {
+    console.log('Yum, I love ' + food);
+  },
+  sleep: function(numMinutes) {
+    for (var i = 0; i < numMinutes; i++) {
+      console.log('z');
+    }
+  }
+};</code></pre>
+        </section>
+
+        <section>
+          <h3>Object methods</h3>
+          <p>Call object methods using dot notation:</p>
+          <pre><code class="javascript">lizzieTheCat.meow();
+lizzieTheCat.eat('brown mushy stuff');
+lizzieTheCat.sleep(10);</code></pre>
+        </section>
+
+        <section>
+          <h3>Built-in objects</h3>
+          <p>JS provides several built-in objects:</p>
+          <ul>
+            <li><code><a target="_blank" href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Array</a></code></li>
+            <li><code><a target="_blank" href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></code></li>
+            <li><code><a target="_blank" href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></code></li>
+            <li><code><a target="_blank" href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></code></li>
+            <li><code><a target="_blank" href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp">RegExp</a></code></li>
+            <li><code><a target="_blank" href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Date">Date</a></code></li>
+            <li><code><a target="_blank" href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math">Math</a></code></li>
+</ul>
+        </section>
+
+        <section>
+            <h3>Getting help</h3>
+            <p>Google for questions or check <a href="http://stackoverflow.com">Stack Overflow</a>. Also look on the <a href="https://developer.mozilla.org/en/JavaScript/Guide">Mozilla Developer Network</a>.</p>
+            <p>Before you share your problematic code, post it to <code>jsbin.com</code></p>
+          </section>
+
+          <section>
+            <h1>Homework</h1>
+            <h2><a href="">tbd</a></h2>
+            <p>If you get stuck between now and next class, put your code on <a href="http://jsbin.com">JSBin.com</a> and email it to your instructor.</p>
+          </section>
+
       </div>
     </div>
     <script src="https://s3.amazonaws.com/gdichicago-cdn/reveal.js/lib/js/head.min.js"></script>
