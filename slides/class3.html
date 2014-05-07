@@ -105,6 +105,44 @@ aboutMe.hair = "blue";</code></pre>
           <pre><code class="javascript">delete aboutMe.gender;</code></pre>
         </section>
 
+        <section>
+          <h3>Arrays of objects</h3>
+          <p>Since arrays can hold any data type, they can also hold objects:</p>
+
+          <pre><code class="javascript">var myCats = [
+  {name: "Lizzie", age: 18},
+  {name: "Daemon", age: 1}
+];
+
+for (var i = 0; i < myCats.length; i++) {
+  var myCat = myCats[i];
+  console.log(myCat.name + ' is ' + myCat.age + ' years old.');
+}</code></pre>
+        </section>
+
+        <section>
+          <h3>Objects as arguments</h3>
+          <p>Just like other data types, objects can be passed into functions:</p>
+          <pre><code class="javascript">var lizzieTheCat = {
+  age: 18,
+  furColor: "grey",
+  likes: ["catnip", "milk"],
+  birthday: {"month": 7, "day": 17, year: 1994}
+}
+
+function describeCat(cat) {
+  console.log("This cat is " + cat.age + " years old with " + cat.furColor + " fur.");
+}
+
+describeCat(lizzieTheCat);</code></pre>
+        </section>
+
+        <section>
+          <h1>Exercise!</h1>
+          <h2><a href="../exercises/class3_objects.html">Objects</a></h2>
+          <p>If you get stuck, raise your hand.</p>
+        </section>
+
       </div>
     </div>
     <script src="https://s3.amazonaws.com/gdichicago-cdn/reveal.js/lib/js/head.min.js"></script>
