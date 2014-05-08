@@ -186,6 +186,139 @@ lizzieTheCat.sleep(10);</code></pre>
 </ul>
         </section>
 
+<!-- BREAK -->
+
+<!-- DOM BABY DOM -->
+        <section>
+          <h1>JavaScript 101</h1>
+          <p><strong>Part 3 (The Sequel)</strong><br>The DOM</p>
+        </section>
+
+        <section>
+          <h3>HTML & CSS: Review</h3>
+          <pre><code class="html">&lt;!doctype html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;All About Cats&lt;/title&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+   h1 {
+     color: red;
+   }
+  #mainpicture {
+    border: 1px solid black;
+  }
+  .catname {
+    font-weight: bold;
+  }
+  &lt;/style&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;h1&gt;CATS!&lt;/h1&gt;
+  &lt;img id=&quot;mainpicture&quot; src=&quot;http://placekitten.com/200/300&quot;&gt;
+  &lt;p&gt;So cute!&lt;/p&gt;
+  &lt;ul&gt;
+   &lt;li class=&quot;catname&quot;&gt;Lizzie&lt;/li&gt;
+   &lt;li class=&quot;catname&quot;&gt;Daemon&lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section>
+          <h3>JavaScript in HTML</h3>
+          <p>You can put JS inside a <code>script</code> tag (commonly at bottom of the page):</p>
+          <pre><code class="html">  &lt;script&gt;
+    console.log('IM ON A WEBPAGE!');
+  &lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+          <p>You can also put JS in an external file and reference it:</p>
+          <pre><code class="html">  &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section>
+          <h3>The DOM Tree</h3>
+          <p>For <a href="../samples/allaboutcats.html">this page</a>:</p>
+          <center><img src="images/dom_tree.png"></center>
+        </section>
+
+        <section>
+          <h3>DOM Inspecting</h3>
+          <ul>
+           <li><a href="https://developers.google.com/chrome-developer-tools/docs/elements">Chrome</a>: Right-click -&gt; "Inspect Element"</li>
+           <li><a href="https://developer.mozilla.org/en/Tools/Inspector">Firefox</a>: Right-click -&gt; "Inspect Element" -&gt; "HTML"</li>
+         </ul>
+         <br><br>
+         <p>Don't make me cry: <strong>don't use Internet Explorer</strong></p>
+         <br><br>
+       </section>
+
+       <section>
+        <h3>Chrome Dev Tools</h3>
+          <p>&hearts;</p>
+          <img src="images/chrome.png" style="border:1px solid black;">
+        </section>
+
+        <section>
+          <h3>DOM Access</h3>
+          <p>The <code><a href="https://developer.mozilla.org/en/DOM/document">document</code></a> object gives us ways of accessing and changing the DOM of the current webpage.</p>
+          <p>General strategy for DOM manipulation:</p>
+          <ol>
+            <li>Find the DOM node using an access method and store it into a variable.</li>
+            <li>Manipulate the DOM node by changing its attributes, styles, inner HTML, or appending new nodes to it.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>DOM "nodes"</h3>
+          <p>Every DOM "node" has properties that let us traverse the DOM like a tree: <code>parentNode</code>, <code>childNodes</code>, <code>firstChild</code>, <code>prevSibling</code>, <code>nextSibling</code>.</p>
+          <pre><code class="javascript">var bodyNode = document.body;
+var htmlNode = document.body.parentNode;
+for (var i = 0; i &lt; document.body.childNodes.length; i++) {
+  var childNode = document.body.childNodes[i];
+}</code></pre>
+        </section>
+
+        <section>
+          <h3>DOM Access: by <code>id</code></h3>
+          <p>The method signature:</p>
+          <pre><code class="javascript">document.getElementById(id);</code></pre>
+
+          <p>If the HTML had:</p>
+          <pre><code class="html">&lt;img id="mainpicture" src="http://placekitten.com/200/300"&gt;</code></pre>
+
+          <p>We'd access it this way:</p>
+          <pre><code class="javascript">var img = document.getElementById('mainpicture');</code></pre>
+        </section>
+
+        <section>
+          <h3>DOM Access: by tag name</h3>
+        </section>
+
+        <section>
+          <h3>DOM Access: HTML5</h3>
+        </section>
+
+        <section>
+          <h3>DOM Nodes: Attributes</h3>
+        </section>
+
+        <section>
+          <h3>DOM Nodes: Styles</h3>
+        </section>
+
+        <section>
+          <h3>DOM innerHTML</h3>
+        </section>
+
+        <section>
+          <h3>DOM Modifying</h3>
+        </section>
+
         <section>
             <h3>Getting help</h3>
             <p>Google for questions or check <a href="http://stackoverflow.com">Stack Overflow</a>. Also look on the <a href="https://developer.mozilla.org/en/JavaScript/Guide">Mozilla Developer Network</a>.</p>
