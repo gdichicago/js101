@@ -18,7 +18,7 @@
 
         <!-- HEADER -->
         <h1>Girl Develop It Chicago</h1>
-        <h2>JS101 Class 3 Exercises: Objects</h2>
+        <h2>JS101 Class 3 Homework</h2>
         <p><a href="http://gdichicago.github.io/gdi-js101">Home</a></p>
       </div>
       <div class="pure-u-1-5"></div>
@@ -33,45 +33,40 @@
     <div class="pure-u-3-5">
       <section>
 
-        <article>
-          <h1>The Recipe Card</h1>
-          <p><em>Never forget another recipe!</em></p>
-
+        <!-- ARTICLE -->
+          <article>
+          <h1>The Movie Database</h1>
+          <p><em>It's like IMDB, but much much smaller!</em></p>
           <ul>
-           <li>Create an object to hold information on your favorite recipe. It should have properties for <code>title</code> (a string), <code>servings</code> (a number), and <code>ingredients</code> (an array of strings).</li>
-           <li>On separate lines (one <code>console.log</code> statement for each), log the recipe information so it looks like:
-            <ul class="unstyled">
-             <li>Mole</li>
-             <li>Serves: 2</li>
-             <li>Ingredients:</li>
-             <li>cinnamon</li>
-             <li>cumin</li>
-             <li>cocoa</li>
-            </ul></li>
+           <li>Create an object to store the following information about your favorite movie: <code>title</code> (a string),
+           <code>duration</code> (a number), and <code>stars</code> (an array of strings).</li>
+           <li>Create a function to print out the movie information like so: "Puff the Magic Dragon lasts for 30 minutes. Stars: Puff, Jackie, Living Sneezes."</li>
           </ul>
 
-          <button class="btn" onclick="showSolution(1)">See Solution</button>
-          <div id="solution1" style="display:none;">
-            <script src="https://gist.github.com/feministy/95339715618fd4c9bf92.js"></script>
+          <button class="btn" onclick="showSolution(3)">See Solution</button>
+          <div id="solution3" style="display:none;">
+            <script src="https://gist.github.com/feministy/2c66c38da1ab03faef94.js"></script>
           </div>
         </article>
 
         <article>
-          <h1>The Reading List</h1>
-          <p><em>Keep track of which books you read and which books you want to read!</em></p>
-           <ul>
-            <li>Create an array of objects, where each object describes a book and has properties for
-            the <code>title</code> (a string), <code>author</code> (a string), and <code>alreadyRead</code> (a boolean indicating if you read it yet).</li>
-            <li>Iterate through the array of books. For each book, log the book title and book author like so: "The Hobbit by J.R.R. Tolkien".</li>
-            <li>Now use an if/else statement to change the output depending on whether you read it yet or not. If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'</li>
-           </ul>
+          <h1>The Book List</h1>
 
-           <button class="btn" onclick="showSolution(2)">See Solution</button>
-          <div id="solution2" style="display:none;">
-            <script src="https://gist.github.com/feministy/c0910a9dde4d70438094.js"></script>
+          <p><em>Keep track of which books you read and which books you want to read!</em></p>
+          <ul>
+            <li>Create a webpage with an <code>h1</code> of "My Book List".</li>
+            <li>Add a script tag to the bottom of the page, where all your JS will go.</li>
+            <li>Create an array of books (make sure they are objects!).</li>
+            <li>Iterate through the array of books. For each book, create a <code>p</code> element with the book title and author and append it to the page.</li>
+            <li><b>Bonus</b>: Use a <code>ul</code> and <code>li</code> to display the books.</li>
+            <li><b>Bonus</b>: add a property to each book with the URL of the book cover, and add an <code>img</code> element for each book on the page.</li>
+            <li><b>Bonus</b>: Change the style of the book depending on whether you have read it or not.</li>
+          </ul>
+          <button  onclick="showSolution(1)" class="btn">See Solution</button>
+          <div id="solution1" style="display:none;">
+            <script src="https://gist.github.com/feministy/85da61ea034833066f61.js"></script>
           </div>
         </article>
-
 
         <!-- DISQUS COMMENTS SECTION -->
         <article>
