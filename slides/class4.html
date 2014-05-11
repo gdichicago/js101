@@ -116,6 +116,121 @@
 
 <!-- BREAK -->
 
+        <section>
+          <h3>Waiting for window &quot;load&quot;</h3>
+          <p>When you use JS to manipulate the DOM, you should make sure the DOM exists.</p>
+
+          <p>You can either put JS at bottom of page, or listen to the "load" event:</p>
+          <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;title&gt;Mouse Events&lt;/title&gt;
+    &lt;script&gt;
+      function onLoad() {
+        // Setup the page
+      }
+      window.addEventListener(&quot;load&quot;, onLoad);
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <section>
+          <h3>The <code>window</code> object</h3>
+
+          <p>When you run JS in the browser, it gives you the <code><a target="_blank" href="https://developer.mozilla.org/en/DOM/window">window</a></code> object with many useful properties and methods:</p>
+
+          <pre><code class="javascript">window.location.href;
+window.navigator.userAgent;
+window.scrollTo(10, 50);
+window.alert("Hello world!");</code></pre>
+
+            <p>The <code>window</code> object is the assumed global object on a page, so:</p>
+            <pre><code class="javascript">window.alert("Hi!");</code></pre>
+
+            <p>...is the same as:</p>
+            <pre><code class="javascript">alert("Hi");</code></pre>
+          </section>
+
+          <section>
+            <h3>Animation in JS</h3>
+
+            <p>The standard way to animate in JS is to use these 2 <code>window</code> methods.</p>
+
+            <p>To call a function once after a delay:</p>
+            <pre><code class="js">window.setTimeout(callbackFunction, delayMilliseconds);</code></pre>
+
+            <p>To call a function repeatedly, with specified interval between each call:</p>
+            <pre><code class="js">window.setInterval(callbackFunction, delayMilliseconds);</code></pre>
+
+            <p>Commonly used to animate DOM node attributes:</p>
+            <pre><code class="js">function makeImageBigger() {
+  var img = document.getElementsByTagName('img')[0];
+  img.setAttribute('width', img.width+10);
+}
+window.setInterval(makeImageBigger, 1000);</code></pre>
+          </section>
+
+          <section>
+            <h3>Animating Styles</h3>
+            <p>It's also common to animate CSS styles for size, transparency, position, and color:</p>
+
+            <pre><code class="js">var img = document.getElementsByTagName('img')[0];
+img.style.opacity = 1.0;
+
+window.setInterval(fadeAway, 1000);
+
+function fadeAway() {
+  img.style.opacity = img.style.opacity - .1;
+}</code></pre>
+
+            <p>Note: opacity is 1E9+ only (plus all other browsers).</p>
+          </section>
+
+          <section>
+            <h3>Animating Styles</h3>
+
+            <pre><code class="js">var img = document.getElementsByTagName('img')[0];
+img.style.position = 'absolute';
+img.style.top = '0px';
+
+function watchKittyFall() {
+  var oldTop = parseInt(img.style.top);
+  var newTop = oldTop + 10;
+  img.style.top = newTop + 'px';
+}
+
+window.setInterval(watchKittyFall, 1000);</code></pre>
+            <p>Note: you must specify (and strip) units.</p>
+          </section>
+
+
+
+
+
+          <section>
+            <h3>Stopping an Animation</h3>
+            <p>To stop at an animation at a certain point, store the timer into a variable and clear with one of these methods:</p>
+
+            <pre><code class="js">window.clearTimeout(timer);
+window.clearInterval(timer);</code></pre>
+
+              <pre><code class="js">var img = document.getElementsByTagName('img')[0];
+img.style.opacity = 1.0;
+
+function fadeAway() {
+  img.style.opacity = img.style.opacity - .1;
+  if (img.style.opacity &lt; .5) {
+    window.clearInterval(fadeTimer);
+  }
+}
+
+var fadeTimer = window.setInterval(fadeAway, 100);</code></pre>
+          </section>
+
 
 
       </div>
