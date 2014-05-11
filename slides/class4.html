@@ -21,6 +21,103 @@
           <h1>JavaScript 101</h1>
           <p><strong>Part 4</strong><br>Events and Animation</p>
         </section>
+
+        <section>
+         <h3>Why we need events</h3>
+         <ul>
+            <li>Form validation and processing
+            <li><a href="http://nymag.com/daily/fashion/2012/05/fug-girls-met-gala-red-carpet-awards.html#photo=3x00015">Interactive slideshows</a></li>
+            <li><a href="http://www.queness.com/post/9283/10-addictive-games-you-wouldnt-believe-theyre-made-with-javascript">Games</a></li>
+            <li><a href="http://docs.google.com">Single-page webapps</a></li>
+            <li>...anything that involves user interaction.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Events and Event Listeners</h3>
+          <p>An 'event' is a type of object that is created when the user interacts with a web page.</p>
+          <p>Events are related to the element the user interacted with, for example when a user clicks a link, a 'click' event is created for that link a element.</p>
+          <p>To trigger some code to run when a particular event happens, we need to create an 'event listener'.</p>
+        </section>
+
+        <section>
+          <h3>Adding Event Listeners</h3>
+          <p>In IE 9+ (and all other browsers):</p>
+
+          <p>Syntax:</p>
+          <pre><code class="javascript">domNode.addEventListener(eventType, eventListener, useCapture);</code></pre>
+
+          <p>Example:</p>
+          <pre><code class="html">&lt;button id=&quot;counter&quot;&gt;0&lt;/button&gt;
+
+&lt;script&gt;
+  var counterButton = document.getElementById('counter');
+  function onButtonClick() {
+  counterButton.innerHTML = parseInt(counterButton.innerHTML) + 1;}
+  counterButton.addEventListener('click', onButtonClick, false);
+&lt;/script&gt;</code></pre>
+        </section>
+
+        <section>
+          <h3>Event Types</h3>
+          <p>The browser triggers many <a href="https://developer.mozilla.org/en/DOM/DOM_event_reference">events</a>. A short list:</p>
+          <ul>
+            <li>mouse events (<a href="https://developer.mozilla.org/en/DOM/MouseEvent">MouseEvent</a>):  <code>mousedown</code>, <code>mouseup</code>, <code>click</code>, <code>dblclick</code>, <code>mousemove</code>, <code>mouseover</code>, <code>mousewheel</code>, <code>mouseout</code>, <code>contextmenu</code></li>
+            <li>touch events (<a href="https://developer.mozilla.org/en/DOM/TouchEvent">TouchEvent</a>): <code>touchstart</code>, <code>touchmove</code>, <code>touchend</code>, <code>touchcancel</code></li>
+            <li>keyboard events (<a href="https://developer.mozilla.org/en/DOM/KeyboardEvent">KeyboardEvent</a>): <code>keydown</code>, <code>keypress</code>, <code>keyup</code>
+              <li>form events: <code>focus</code>, <code>blur</code>, <code>change</code>, <code>submit</code></li>
+              <li>window events: <code>scroll</code>, <code>resize</code>, <code>hashchange</code>, <code>load</code>, <code>unload</code></li>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Event Properties</h3>
+          <p>When your event listener is called, the browser passes an event object with information about the event into the function.</p>
+
+          <p>Each event type has different properties. For example, <a href="https://developer.mozilla.org/en/DOM/MouseEvent">MouseEvent</a> reports the clicked coordinates:</p>
+
+          <pre><code class="html">&lt;img id=&quot;kitten&quot; src=&quot;http://placekitten.com/200/300&quot;&gt;
+&lt;div id=&quot;info&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+  var kittenImg = document.getElementById('kitten');
+  var infoDiv   = document.getElementById('info');
+  function onClick(event) {
+    info.innerHTML = 'You clicked on ' + event.clientX + ' , ' + event.clientY;
+  }
+  kittenImg.addEventListener('click', onClick, false);
+&lt;/script&gt;</code></pre>
+        </section>
+
+
+
+        <section>
+          <h3>Processing Form Input</h3>
+          <p>A common use of events is to process form input, either by responding to button click events or input click/change events.</p>
+
+          <pre><code class="html">&lt;input id=&quot;myname&quot; type=&quot;text&quot;&gt;
+&lt;button id=&quot;button&quot;&gt;Say My Name&lt;/button&gt;
+
+&lt;script&gt;
+  var button = document.getElementById('button');
+  function onClick(event) {
+    var myName = document.getElementById(&quot;myname&quot;).value;
+    alert(&quot;Hi, &quot; + myName);
+  }
+  button.addEventListener('click', onClick);
+&lt;/script&gt;</code></pre>
+        </section>
+
+        <section>
+          <h1>Exercise!</h1>
+          <h2><a href="../exercises/class4_events.html">Event</a></h2>
+          <p>If you get stuck, raise your hand.</p>
+        </section>
+
+<!-- BREAK -->
+
+
+
       </div>
     </div>
     <script src="https://s3.amazonaws.com/gdichicago-cdn/reveal.js/lib/js/head.min.js"></script>
