@@ -1,0 +1,61 @@
+@import "var";
+
+body {
+  @include font-sans-serif;
+  @include font-size-adjust;
+  color: $text;
+}
+
+p {
+  @include font-size-adjust;
+}
+
+em {
+  @include font-serif;
+  @include font-size-adjust(0.4);
+}
+
+a {
+  color: $purple;
+  text-decoration: none;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  &:hover {
+    color: $teal;
+  }
+}
+
+.primary {
+  @include primary-core;
+  float: right;
+  text-align: right;
+}
+
+.secondary h1 {
+  @include secondary-core;
+  @include font-size-adjust(2);
+}
+
+h2, h3, h4, h5, h6 {
+  @include font-serif;
+  color: $teal;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+article {
+  border-top: 10px solid lighten($text, 50%);
+}
+
+ul {
+  margin-left: 20px;
+  @include font-size-adjust(0.8);
+  li {
+    padding: 5px;
+  }
+}
