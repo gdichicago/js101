@@ -18,14 +18,12 @@
 
         <!-- HEADER -->
         <h1>Girl Develop It Chicago</h1>
-        <h2>JS101 Class 3 Exercises: Objects</h2>
+        <h2>JS101 Class 3 Exercises: The DOM</h2>
         <p><a href="http://gdichicago.github.io/gdi-js101">Home</a></p>
       </div>
       <div class="pure-u-1-5"></div>
     </div>
   </header>
-
-
 
   <!-- CONTENT -->
   <div class="pure-g">
@@ -34,46 +32,42 @@
       <section>
 
         <article>
-          <h1>The Recipe Card</h1>
-          <p><em>Never forget another recipe!</em></p>
+          <h1>The Logo Hijack</h1>
+
+          <p><em>No homepage is safe from the logo bandit!</em></p>
 
           <ul>
-           <li>Create an object to hold information on your favorite recipe. It should have properties for <code>title</code> (a string), <code>servings</code> (a number), and <code>ingredients</code> (an array of strings).</li>
-           <li>On separate lines (one <code>console.log</code> statement for each), log the recipe information so it looks like:
-            <ul class="unstyled">
-             <li>Mole</li>
-             <li>Serves: 2</li>
-             <li>Ingredients:</li>
-             <li>cinnamon</li>
-             <li>cumin</li>
-             <li>cocoa</li>
-            </ul></li>
+            <li>Open up <a href="http://www.google.com">www.google.com</a> in Chrome or Firefox, and open up the console.</li>
+            <li>Find the Google logo and store it in a variable.</li>
+            <li>Modify the source of the logo IMG so that it's a Yahoo logo instead.</li>
+            <li>Find the Google search button and store it in a variable.</li>
+            <li>Modify the text of the button so that it says "Yahooo!" instead.</li>
           </ul>
-
-          <button class="btn" onclick="showSolution(1)">See Solution</button>
-          <div id="solution1" style="display:none;">
-            <script src="https://gist.github.com/feministy/95339715618fd4c9bf92.js"></script>
+          <button class="btn" onclick="showSolution(3)">See Solution</button>
+          <div id="solution3" style="display:none;">
+            <script src="https://gist.github.com/feministy/e74c590a84b9492885cb.js"></script>
           </div>
         </article>
 
         <article>
-          <h1>The Reading List</h1>
-          <p><em>Keep track of which books you read and which books you want to read!</em></p>
-           <ul>
-            <li>Create an array of objects, where each object describes a book and has properties for
-            the <code>title</code> (a string), <code>author</code> (a string), and <code>alreadyRead</code> (a boolean indicating if you read it yet).</li>
-            <li>Iterate through the array of books. For each book, log the book title and book author like so: "The Hobbit by J.R.R. Tolkien".</li>
-            <li>Now use an if/else statement to change the output depending on whether you read it yet or not. If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'</li>
-           </ul>
+          <h1>About Me</h1>
+          <p><em>Because every webpage needs an "About" section.</em></p>
+          <ul>
+            <li>Start with this HTML and save it as "aboutme.html":<br>
+            <script src="https://gist.github.com/feministy/599771f091270ac908af.js"></script></li>
+            <li>Add a <code>script</code> tag to the bottom.</li>
+            <li>Change the body style so it has a font-family of "Arial, sans-serif".</li>
+            <li>Replace each of the spans (nickname, favorites, hometown) with your own information.</li>
+            <li>Iterate through each li and change the class to "listitem". Add a <code>style</code> tag that sets a rule for "listitem" to make the color red.</li>
+            <li>Create a new <code>img</code> element and set its <code>src</code> attribute to a picture of you. Append that element to the page.</li>
+          </ul>
+        <button onclick="showSolution(2)" class="btn">See Solution</button>
+        <div id="solution2" style="display:none;">
+          <script src="https://gist.github.com/feministy/f0a57ec5db5ba0e65569.js"></script>
+        </div>
+      </article>
 
-           <button class="btn" onclick="showSolution(2)">See Solution</button>
-          <div id="solution2" style="display:none;">
-            <script src="https://gist.github.com/feministy/c0910a9dde4d70438094.js"></script>
-          </div>
-        </article>
-
-
-        <!-- DISQUS COMMENTS SECTION -->
+  <!-- DISQUS COMMENTS SECTION -->
         <article>
           <h1>Discussion</h1>
           <p>
@@ -95,9 +89,6 @@
           <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
         </article>
       </section>
-
-
-
 
         <!-- FOOTER -->
       <footer>
@@ -123,3 +114,4 @@
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </body>
 </html>
+
