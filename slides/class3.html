@@ -190,8 +190,8 @@ lizzieTheCat.sleep(10);</code></pre>
 
 <!-- DOM BABY DOM -->
         <section>
-          <h1>JavaScript 101</h1>
-          <p><strong>Part 3 (The Sequel)</strong><br>The DOM</p>
+          <h2>JavaScript:<br>
+          Working with the DOM</h2>
         </section>
 
         <section>
@@ -297,26 +297,143 @@ for (var i = 0; i &lt; document.body.childNodes.length; i++) {
 
         <section>
           <h3>DOM Access: by tag name</h3>
+          <p>The method signature:</p>
+          <pre><code class="javascript">document.getElementByTagName(tagName);</code></pre>
+
+          <p>If the HTML had:</p>
+          <pre><code class="html">&lt;li class=&quot;catname&quot;&gt;Lizzie&lt;/li&gt;
+&lt;li class=&quot;catname&quot;&gt;Daemon&lt;/li&gt;</code></pre>
+          <p>We'd access it this way:</p>
+          <pre><code class="javascript">var listItems = document.getElementsByTagName('li');
+for (var i =0; i &lt; listItems.length; i++) {
+  var listItem = listItems[i];
+}</code></pre>
         </section>
 
         <section>
           <h3>DOM Access: HTML5</h3>
+          <p>The HTML5 spec includes a few even more convenient methods.</p>
+
+          <p>Available in <a href="http://caniuse.com/#search=getElementsByClassName">IE9+, FF3.6+, Chrome 17+, Safari 5+</a>:</p>
+
+          <pre><code class="javascript">document.getElementsByClassName(className);
+
+var catNames = document.getElementsByClassName('catname');
+for (var i =0; i &lt; catNames.length; i++) {
+  var catName = catNames[i];
+}</code></pre>
+        </section>
+
+        <section>
+          <h3>DOM Access: HTML5</h3>
+          <p>Available in <a href="http://caniuse.com/#search=querySelectorAll">IE8+, FF3.6+, Chrome 17+, Safari 5+</a>:</p>
+
+          <pre><code class="javascript">document.querySelector(cssQuery);
+document.querySelectorAll(cssQuery);
+
+var catNames = document.querySelectorAll('ul li.catname');</code></pre>
         </section>
 
         <section>
           <h3>DOM Nodes: Attributes</h3>
+          <p>You can access and change attributes of DOM nodes using dot notation.</p>
+
+          <p>If we had this HTML:</p>
+          <pre><code class="html">&lt;img id="mainpicture" src="http://placekitten.com/200/300"&gt;</code></pre>
+
+          <p>We could change the src attribute this way:</p>
+
+          <pre><code class="javascript">var img = document.getElementById('mainpicture');
+var oldSrc = img.src;
+img.src = 'http://placekitten.com/100/500';</code></pre>
+        </section>
+
+        <section>
+          <h3>DOM Nodes: Attributes</h3>
+          <p><strong>Another way:</strong> or using <code>getAttribute</code>/<code>setAttribute</code>:</p>
+
+          <pre><code class="javascript">var oldSrc = img.getAttribute('src');
+img.setAttribute('src', 'http://placekitten.com/100/500');</code></pre>
+
+          <p>To set class, use the property <code>className</code>:</p>
+          <pre><code class="javascript">img.className = "picture";</code></pre>
         </section>
 
         <section>
           <h3>DOM Nodes: Styles</h3>
+          <p>You can change styles on DOM nodes via the <code>style</code> property.</p>
+          <p>If we had this CSS:</p>
+          <pre><code class="css">body {
+  color: red;
+}</code></pre>
+          <p>We'd run this JS:</p>
+          <pre><code class="javascript">var pageNode = document.getElementsByTagName('body')[0];
+pageNode.style.color = 'red';</code></pre>
+        </section>
+
+        <section>
+          <h3>DOM Nodes: Styles</h3>
+          <p>CSS property names with a "-" must be camelCased and number properties must have a unit:</p>
+          <pre><code class="css">body {
+  background-color: pink;
+  padding-top: 10px;
+}</code></pre>
+
+<pre><code class="javascript">pageNode.style.backgroundColor = 'pink';
+pageNode.style.paddingTop = '10px';</code></pre>
         </section>
 
         <section>
           <h3>DOM innerHTML</h3>
+          <p>Each DOM node has an <code>innerHTML</code> property with the HTML of all its children:</p>
+
+          <pre><code class="javascript">var pageNode = document.getElementsByTagName('body')[0];</code></pre>
+
+          <p>You can read out the HTML like this:</p>
+          <pre><code class="javascript">console.log(pageNode.innerHTML);</code></pre>
+        </section>
+
+        <section>
+          <h3>DOM innerHTML</h3>
+          <p>You can set <code>innerHTML</code> yourself to change the contents of the node:</p>
+
+          <pre><code class="javascript">pageNode.innerHTML = "&lt;h1&gt;Oh Noes!&lt;/h1&gt; &lt;p&gt;I just changed the whole page!&lt;/p&gt;"</code></pre>
+
+          <p>You can also just add to the <code>innerHTML</code> instead of replace:</p>
+
+          <pre><code class="javascript">pageNode.innerHTML += "...just adding this bit at the end of the page.";</code></pre>
         </section>
 
         <section>
           <h3>DOM Modifying</h3>
+          <p>The <code>document</code> object also provides ways to create nodes from scratch:</p>
+
+          <pre><code class="javascript">document.createElement(tagName);
+document.createTextNode(text);
+document.appendChild();</code></pre>
+        </section>
+
+
+        <section>
+          <h3>DOM Modifying</h3>
+
+          <pre><code class="js">var pageNode = document.getElementsByTagName('body')[0];
+
+var newImg = document.createElement('img');
+newImg.src = 'http://placekitten.com/400/300';
+newImg.style.border = '1px solid black';
+pageNode.appendChild(newImg);
+
+var newParagraph = document.createElement('p');
+var paragraphText = document.createTextNode('Squee!');
+newParagraph.appendChild(paragraphText);
+pageNode.appendChild(newParagraph);</code></pre>
+        </section>
+
+        <section>
+          <h1>Exercise!</h1>
+          <h2><a href="../exercises/class3_dom.html">DOM</a></h2>
+          <p>If you get stuck, raise your hand.</p>
         </section>
 
         <section>
