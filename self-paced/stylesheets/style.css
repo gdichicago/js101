@@ -3,7 +3,7 @@ body {
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 300;
   font-size: 1.25em;
-  color: #474949;
+  color: #363636;
 }
 
 /* line 9, ../sass/style.scss */
@@ -20,7 +20,7 @@ em {
 
 /* line 18, ../sass/style.scss */
 a {
-  color: #cc99cc;
+  color: #e74c30;
   text-decoration: none;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -28,7 +28,7 @@ a {
 }
 /* line 24, ../sass/style.scss */
 a:hover {
-  color: #8abeb7;
+  color: #037e8c;
 }
 
 /* line 29, ../sass/style.scss */
@@ -46,7 +46,7 @@ a:hover {
   font-family: "Lora", "Georgia", serif;
   font-weight: 400;
   line-height: 1.1em;
-  color: #cc99cc;
+  color: #e74c30;
   font-size: 2.5em;
 }
 
@@ -54,7 +54,7 @@ a:hover {
 h2, h3, h4, h5, h6 {
   font-family: "Lora", "Georgia", serif;
   font-weight: 400;
-  color: #8abeb7;
+  color: #037e8c;
 }
 
 /* line 45, ../sass/style.scss */
@@ -66,7 +66,7 @@ h2, h3, h4, h5, h6 {
 
 /* line 51, ../sass/style.scss */
 article {
-  border-top: 10px solid #c7c8c8;
+  border-top: 10px solid #fceae7;
 }
 
 /* line 55, ../sass/style.scss */

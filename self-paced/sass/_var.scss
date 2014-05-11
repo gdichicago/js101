@@ -1,9 +1,7 @@
 // Colors
-$text: #474949;
-$purple: #c9c;
-$teal: #8abeb7;
-$orange: #f99157;
-$green: #b5bd68;
+$text: #363636;
+$orange: #E74C30;
+$teal: #037E8C;
 
 // Fonts
 $font-size: 1.25;
@@ -46,5 +44,5 @@ $font-mono: 'Source Code Pro', monospace;
 @mixin secondary-core {
   @include font-serif;
   @include large-line-height;
-  color: $purple;
+  color: $orange;
 }

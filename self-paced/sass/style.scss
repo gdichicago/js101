@@ -16,7 +16,7 @@ em {
 }
 
 a {
-  color: $purple;
+  color: $orange;
   text-decoration: none;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
@@ -49,7 +49,7 @@ h2, h3, h4, h5, h6 {
 }
 
 article {
-  border-top: 10px solid lighten($text, 50%);
+  border-top: 10px solid lighten($orange, 40%);
 }
 
 ul {
