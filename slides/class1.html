@@ -44,6 +44,7 @@
         <section>
             <h3>What we'll cover today</h3>
             <ul>
+                <li>Intro to Programming</li>
                 <li>Brief history of JavaScript</li>
                 <li>What does JavaScript do?</li>
                 <li>Statements</li>
@@ -55,8 +56,52 @@
             </ul>
         </section>
         <section>
+          <h2>Intro to Programming</h2>
+        </section>
+        <section>
+          <h2>What is programming?</h2>
+          <img src="images/dumb_computer.jpeg" alt="">
+          <p>
+            A way of telling the computer what to do. Commands!
+          </p>
+          <aside class="notes">
+            Computers can only do very basic things, but programs can put together basic commands to achieve complexity.Computers can execute sequences of basic commands quite fast.
+          </aside>
+        </section>
+        <section>
+          <h3>Types of Programming</h3>
+          <img src="images/types_programming.png" alt="">
+          <ul>
+            <li class="fragment">High-level: abstracts things away from the computer, makes it easier for us</li>
+            <li class="fragment">Assembly: specific to the computer</li>
+            <li class="fragment">Machine code: actual code executed by the computer</li>
+          </ul>
+          <aside class="notes">
+            JavaScript is a part of this process, it is a high level language.
+          </aside>
+        </section>
+        <section>
+          <h2>Compiled v. Interpreted Languages</h2>
+        </section>
+        <section>
+          <h3>Compiled Languages</h3>
+          <p>
+            Source code is translated to machine code before it can run. Usually these are lower-level languages closer to machine code.
+          </p>
+        </section>
+        <section>
+          <h3>Interpreted Languages</h3>
+          <p>
+            Code is executed automatically. Each statement is translated into subroutines that are already compiled into machine code. These are higher-level languages abstracted from machine code.
+          </p>
+        </section>
+        <section>
+          <h3>Compiled v. Interpreted Languages</h3>
+          <img src="images/compiled-interpreted.png" alt="">
+        </section>
+        <section>
             <h3>The Language of the Web</h3>
-            <img src="images/web.png" alt="">
+            <img src="images/web.png" alt="" style="height:400px"/>
             <p>Also used for plug-in scripting (Adobe/Mozilla/Chrome), game scripting, and <a href="http://en.wikipedia.org/wiki/JavaScript#Uses_outside_web_pages">more</a>.</p>
         </section>
         <section>
@@ -392,6 +437,9 @@ function addNumbers(num1, num2) {
 
 addNumbers(3, 10);
             </code></pre>
+        </section>
+        <section>
+            <h3>Function Arguments</h3>
             <p>You can also pass variables:</p>
             <pre><code class="javascript">
 var number = 10;
