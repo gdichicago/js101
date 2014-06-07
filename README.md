@@ -1,7 +1,5 @@
 # Girl Develop It JS101
 
-*Note: incomplete. Slides, materials, and homework for classes 3 and 4 aren't done yet.*
-
 These slides are slightly modified from Pamela Fox's JS101 materials (found [here](https://github.com/pamelafox/teaching-materials)) to fit the GDI teaching template.
 
 JS101 is meant to be taught in 4 classes, approximately 2-2.5 hours each (a total of 8-10 hours of instruction). Each session includes workshop slides with lecture notes, a series of in-class exercises, and homework to complete between classes.
@@ -10,7 +8,7 @@ JS101 is meant to be taught in 4 classes, approximately 2-2.5 hours each (a tota
 
 ## Class website
 
-The class website and slides are available hosted [here](http://gdichicago.com/classes/js101/index.html). You can teach this class using everything on that page.
+The class website and slides are available hosted [here](http://gdichicago.com/classes/js101/). You can teach this class using everything on that page.
 
 The website includes slides, exercises, homework, and additional reading for each class.
 
