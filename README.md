@@ -26,7 +26,7 @@ If you don't have an internet connection, or you're worried about the internet n
 
 # Course description
 
-*This is a four-week series, with classes being held on Mondays June 9, 16, 23, and 30 from 6-8:30PM. Makeup sessions are not offered. *
+*This is a four-week series, with classes being held on Mondays June 9, 16, 23, and 30 from 6-8:30PM. Makeup sessions are not offered.*
 
 JavaScript is the programming language that makes web pages interactive, and is now used these days to make servers, robots, and more. That makes it one of the most useful first languages to learn, if you're just getting started with programming, and particularly web development. 
 
@@ -38,7 +38,7 @@ This workshop is targeted at beginners to programming. If you already know anoth
 
 **Location:** Dev Bootcamp, 351 W Hubbard, Floor 7
 
-*A limited number of scholarships are available for those with a financial hardship. To apply, click here. Do not RSVP for the event. The deadline to apply for a scholarship is May 25. Scholarship applicants will be notified shortly after the deadline. Class capacity does not impact scholarship students. *
+*A limited number of scholarships are available for those with a financial hardship. To apply, click here. Do not RSVP for the event. The deadline to apply for a scholarship is May 25. Scholarship applicants will be notified shortly after the deadline. Class capacity does not impact scholarship students.*
 
 
 ###Prerequisites:
