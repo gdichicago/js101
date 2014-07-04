@@ -4,8 +4,6 @@ These slides are slightly modified from Pamela Fox's JS101 materials (found [her
 
 JS101 is meant to be taught in 4 classes, approximately 2.5 hours each (a total of 10 hours of instruction). Each session includes workshop slides with lecture notes, a series of in-class exercises, and homework to complete between classes.
 
-*Class description and instructions for use pending slide completion.*
-
 ## Class website
 
 The class website and slides are available hosted [here](http://gdichicago.com/classes/js101/). You can teach this class using everything on that page.
@@ -16,7 +14,7 @@ The website includes slides, exercises, homework, and additional reading for eac
 
 ## Dependencies
 
-All CSS and JavaScript used for this are hosted on AWS. You don't have to worry about them.
+All CSS and JavaScript used for this are hosted on AWS. You don't have to worry about them or pulling them down.
 
 **Reveal.js**
 
