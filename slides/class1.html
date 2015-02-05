@@ -137,7 +137,7 @@
         <section>
             <h1>Statements</h1>
             <p>
-                Each separate instruction in Javascript is called a 'statement'. A 'simple' statement represents a single instruction and ends with a semi-colon.
+                Each separate instruction in JavaScript is called a 'statement'. A 'simple' statement represents a single instruction and ends with a semi-colon.
             </p>
         </section>
         <section>
@@ -157,7 +157,7 @@ console.log('Hello World!');
                 Variables store values so we can re-use them later.
             </p>
             <p>
-                Variables are one of the basic building blocks of Javascript.
+                Variables are one of the basic building blocks of JavaScript.
             </p>
         </section>
         <section>
@@ -177,7 +177,7 @@ console.log(x);
             <p>In both cases, <strong><code>x</code></strong> is our variable. <strong><code>5</code></strong> is the value of that variable.</p>
             <aside class="notes">
                 Just like 'x' in algebra, a variable in programming is a named container for a value that can change. Variables have to be 'declared' once before being used, using the 'var' keyword and the name of the variable. A variable declaration is a simple statement, so it ends with a semi-colon.<br><BR>
-                Assigning an initial value to a variable is called 'initialising'. You can declare and initialise in one go, or seperately.<br><br>
+                Assigning an initial value to a variable is called 'initialising'. You can declare and initialize in one go, or separately.<br><br>
                 If its not assigned, it's undefined.
             </aside>
         </section>
@@ -199,7 +199,7 @@ console.log(z);
             </p>
             <aside class="notes">
                 <ul>
-                    <li>Variables can be populated with any one of the 'data types' available in Javascript. These are the simple ones we'll be working with today.</li>
+                    <li>Variables can be populated with any one of the 'data types' available in JavaScript. These are the simple ones we'll be working with today.</li>
                     <li>There are also data types that cater for situations where there is no value undefined and null.</li>
                     <li>
                         Loose typing- you don't tell JS what type of data type it is, it guesses. You can use typeof to see what it thinks.
@@ -216,7 +216,7 @@ var restaurant = "Taco's Place";
             </code></pre>
         </section>
         <section>
-            <h3>Primitve Data Types: Numbers</h3>
+            <h3>Primitive Data Types: Numbers</h3>
             <p>Whole numbers (6, -102) or floating point (5.8737).</p>
             <pre><code class="javascript">
 var myAge = 28;
@@ -224,7 +224,7 @@ var pi = 3.14;
             </code></pre>
         </section>
         <section>
-            <h3>Primitve Data Types: Booleans</h3>
+            <h3>Primitive Data Types: Booleans</h3>
             <p>Represents logical values true or false.</p>
             <pre><code class="javascript">
 var catsAreBest = false;
@@ -233,14 +233,14 @@ var dogsRule = true;
             <p>It looks like a string, but <strong>it's not</strong>.</p>
         </section>
         <section>
-            <h3>Primitve Data Types: <code>undefined</code></h3>
+            <h3>Primitive Data Types: <code>undefined</code></h3>
             <p>Represents a value that hasn't been defined.</p>
             <pre><code class="javascript">
 var notDefinedYet;
             </code></pre>
         </section>
         <section>
-            <h3>Primitve Data Types: <code>null</code></h3>
+            <h3>Primitive Data Types: <code>null</code></h3>
             <p>Represents an explicitly empty value.</p>
             <pre><code class="javascript">
 var goodPickupLines = null;
@@ -259,6 +259,20 @@ var hello = "Hello, world";
 typeof hello;
             </code></pre>
             <p>What does that return?</p>
+        </section>
+        <section>
+            <h3>Loose vs. Strong Typing</h3>
+            <p>
+                A <strong>strongly</strong> typed language is a language that is being strict about what you can do with your typed variables. (Don’t mix them… or I will throw you an error!)
+            </p>
+            <p>
+                A <strong>loosely</strong> typed language is the opposite. (Do what you want with your different types. Mix them all! We’ll see what happens!)
+            </p>
+            <pre><code class="javascript">
+var hello = "Hello, world";
+hello + 123;
+            </code></pre>
+            <p>What do you think that returns? Try it in the console.</p>
         </section>
         <section>
             <h1>Variables</h1>
